@@ -6,17 +6,18 @@
 </head>
 <body>
   <header class="header">
-    <img class="header-logo" src="#" alt="Device">
+    <a href="index.html"><img class="header-logo" src="#" alt="Device"></a>
     <div class="upper-menu">
       <span class="search">
          <span class="icon search-icon"></span>
-            <input type="search" name="Поиск по сайту" placeholder=" Поиск по сайту">
-         </span>
-      <span class="user">
-            <span class="icon user-icon"></span>
-            <span class="user-name">Валентин Петухов</span>
-            <a href="#">Войти</a>
+           <!-- Здесь будет форма
+            <input type="search" name="Поиск по сайту" placeholder=" Поиск по сайту"> -->
       </span>
+      <ul class="user">
+        <li class="header-user-icon"></li>
+        <li class="header-user-name">Валентин Петухов</li>
+        <li><a href="#">Выйти</a></li>
+      </ul>
       <span class="compare">
             <span class="icon compare-icon"></span>
             <a href="#">Сравнить</a>
@@ -26,14 +27,31 @@
             <a href="#">Корзина</a>
       </span>
     </div>
-    <div class="lower-menu">
-          <span class="lower-menu-catalog">
-            <a href="#">Каталог товаров</a>
-            <span class="icon catalog-icon"></span>
-          </span>
-     <a href="#" class="lower-menu-delivery">Доставка</a>
-     <a href="#" class="lower-menu-varanty">Гарантия</a>
-     <a href="#" class="lower-menu-contacts">Контакты</a>
+    <nav>
+      <span class="catalog">
+        <a href="#">Каталог товаров</a>
+        <span class="icon catalog-icon"></span>
+      </span>
+      <ul>
+        <li><a href="#" class="delivery">Доставка</a></li>
+        <li><a href="#" class="varanty">Гарантия</a></li>
+        <li><a href="#" class="contacts">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="catalog-menu">
+      <ul class="vr">
+        <li>Виртуальная реальность</li>
+        <li>Моноподы для селфи</li>
+        <li>Экшн-камеры/li>
+      </ul>
+      <ul class="braclets">
+        <li>Фитнес-браслеты</li>
+        <li>Умные часы</li>
+      </ul>
+      <ul class="quadcopters">
+        <li>Квадрокоптеры</li>
+      </ul>
     </div>
   </header>
 
@@ -48,73 +66,79 @@
       </span>
     </section>
 
-    <!-- Здесь будет фильтр-->
+    <!-- Здесь будет горизонтальный фильтр - пропущена по заданию -->
 
-    <section class="filter-left">
-      <span class="filter-dash"></span>
-      <span class="filter-left-text">Стоимость</span>
-      <input type="filter-left-range">
-      <input type="filter-left-range">
-      <span class="filter-left-range-quantity">
+    <section class="column-left">
+      <h2 class="hidden">Фильтр</h2>
+      <span class="column-left-text">Стоимость</span>
+      <!-- Здесь будет рычажок -->
+      <span class="column-left-range-quantity">
         <span class="quantity-left">от 0</span>
         <span class="quantity-right">до 5000</span>
       </span>
-      <span class="filter-dash"></span>
-      <span class="filter-left-text">Цвет</span>
+      <span class="column-left-dash"></span>
+      <span class="column-left-text">Цвет</span>
       <ul>
-        <li><input type="checkbox" checked>Черный</li>
-        <li><input type="checkbox">Белый</li>
-        <li><input type="checkbox" checked>Синий</li>
-        <li><input type="checkbox" checked>Красный</li>
-        <li><input type="checkbox">Розовый</li>
+        <li>Черный</li> <!-- Возможно будет <from> <input type="checkbox" checked  -->
+        <li>Белый</li>
+        <li>Синий</li>
+        <li>Красный</li>
+        <li>Розовый</li>
       </ul>
-      <span class="filter-dash"></span>
-      <span class="filter-left-text">Bluetooth</span>
-             <!-- Тут назнаю какой тег использовать  например <input type="radio" > или <input type="checkbox">    -->
+      <span class="column-left-dash"></span>
+      <span class="column-left-text">Bluetooth</span>
       <ul class="Bluetooth">
-        <li><input type="checkbox">Есть</li>
-        <li><input type="checkbox">Нет</li>
+        <li>Есть</li>  <!-- Тут назнаю какой тег использовать  например <input type="radio" > или <input type="checkbox">    -->
+        <li>Нет</li>
       </ul>
-      <span class="decor_yellow_dash">Показать</span>
+      <button class="yellow_dash">Показать</button>
     </section>
 
     <section class="goods">
-      <div class="item">
-        <img src="#" alt="Любительская селфи-палка" width="360px" height="380px">
-        <span class="item-name">Любительская селфи-палка</span>
-        <span class="item-price">500 руб.</span>
-      </div>
-      <div class="item">
-        <img src="#" alt="Профессиональная селфи-палка " width="360px" height="380px">
-        <span class="item-name">Профессиональная селфи-палка </span>
-        <span class="item-price">1 500 руб.</span>
-      </div>
-      <div class="item">
-        <img src="#" alt="Непотопляемая селфи-палка" width="360px" height="380px">
-        <span class="item-name">Непотопляемая селфи-палка</span>
-        <span class="item-price">2 500 руб.</span>
-      </div>
-      <div class="item">
-        <img src="#" alt="Селфи-палка «Следуй за мной»" width="360px" height="380px">
-        <span class="item-name">Селфи-палка «Следуй за мной»</span>
-        <span class="item-price">4 900 руб.</span>
-      </div>
+      <h2 class="hiden">Товары</h2>
+      <a href="#">
+        <div class="item">
+          <img src="#" alt="Любительская селфи-палка">
+          <span class="item-name">Любительская селфи-палка</span>
+          <span class="item-price">500 руб.</span>
+        </div>
+      </a>
+      <a href="#">
+        <div class="item">
+          <img src="#" alt="Профессиональная селфи-палка">
+          <span class="item-name">Профессиональная селфи-палка </span>
+          <span class="item-price">1 500 руб.</span>
+        </div>
+      </a>
+      <a href="#">
+        <div class="item">
+          <img src="#" alt="Непотопляемая селфи-палка">
+          <span class="item-name">Непотопляемая селфи-палка</span>
+          <span class="item-price">2 500 руб.</span>
+        </div>
+      </a>
+      <a href="#">
+        <div class="item">
+          <img src="#" alt="Селфи-палка «Следуй за мной»">
+          <span class="item-name">Селфи-палка «Следуй за мной»</span>
+          <span class="item-price">4 900 руб.</span>
+        </div>
+      </a>
+
     </section>
 
 
   </main>
 
 
-  <!-- Здесь футер -->
-
-  <footer class="footer-main">
+    <footer class="footer-main">
     <div class="upper-menu">
-      <img  class="footer-logo" src="#" alt="Device">
-      <span class="user">
-          <span class="footer-user-icon"></span>
-          <span class="user-name">Валентин Петухов</span>
-          <a href="#">Выйти</a>
-        </span>
+      <a href="index.html"><img  class="footer-logo" src="#" alt="Device"></a>
+      <ul class="user">
+          <li class="footer-user-icon"></li>
+          <li class="footer-user-name">Валентин Петухов</li>
+          <li><a href="#">Выйти</a></li>
+        </ul>
       <span class="compare">
           <span class="icon compare-icon"></span>
           <a href="#">Сравнить</a>
@@ -125,19 +149,18 @@
         </span>
     </div>
     <div class="lower-menu">
-      <span class="lower-menu-adress">г. Москва, ул. Строителей, 15</span>
-      <span>
-          <a href="#" class="lower-menu-delivery">Доставка</a>
-          <a href="#" class="lower-menu-varanty">Гарантия</a>
-          <a href="#" class="lower-menu-contacts">Контакты</a>
-        </span>
+      <address>г. Москва, ул. Строителей, 15</address>
+      <ul>
+        <li><a href="#" class="lower-menu-delivery">Доставка</a></li>
+        <li><a href="#" class="lower-menu-varanty">Гарантия</a></li>
+        <li><a href="#" class="lower-menu-contacts">Контакты</a></li>
+      </ul>
       <span class="tel">Тел.: +7 (495) 495-95-95</span>
     </div>
-    <div class="links">
-      <a href="#" class="decor_dash yellow"></a>
-      <a href="#" class="social"></a>
-      <a href="#" class="HTMK-Academy">HTML-Academy</a>
-    </div>
+    <ul class="links">
+      <li><a href="#" class="social"></a></li>
+      <li><a href="#" class="HTMK-Academy">HTML-Academy</a></li>
+    </ul>
   </footer>
 </body>
 </html>

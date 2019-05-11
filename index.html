@@ -6,16 +6,17 @@
   </head>
   <body>
     <header class="header-main">
-      <img class="header-logo" src="#" alt="Device">
+      <a><img class="header-logo" src="#" alt="Device"></a>
       <div class="upper-menu">
         <span class="search">
           <span class="icon search-icon"></span>
-          <input type="search" name="Поиск по сайту" placeholder=" Поиск по сайту">
+         <!-- Здесь будет форма
+          <input type="search" name="Поиск по сайту" placeholder=" Поиск по сайту"> -->
         </span>
-        <span class="user">
-          <span class="icon user-icon"></span>
-          <a href="#">Войти</a>
-        </span>
+        <ul class="user">
+          <li class="header-user-icon"></li>
+          <li><a href="#">Войти</a></li>
+        </ul>
         <span class="compare">
           <span class="icon compare-icon"></span>
           <a href="#">Сравнить</a>
@@ -26,14 +27,31 @@
         </span>
       </div>
 
-      <div class="lower-menu">
-        <span class="lower-menu-catalog">
-          <a href="catalog.html">Каталог товаров</a>
-          <span class="icon catalog-icon"></span>
-        </span>
-        <a href="#" class="lower-menu-delivery">Доставка</a>
-        <a href="#" class="lower-menu-varanty">Гарантия</a>
-        <a href="#" class="lower-menu-contacts">Контакты</a>
+      <nav>
+        <span class="catalog">
+        <a href="#">Каталог товаров</a>
+        <span class="icon catalog-icon"></span>
+      </span>
+        <ul>
+          <li><a href="#" class="delivery">Доставка</a></li>
+          <li><a href="#" class="varanty">Гарантия</a></li>
+          <li><a href="#" class="contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="catalog-menu">
+        <ul class="vr">
+          <li>Виртуальная реальность</li>
+          <li>Моноподы для селфи</li>
+          <li>Экшн-камеры/li>
+        </ul>
+        <ul class="braclets">
+          <li>Фитнес-браслеты</li>
+          <li>Умные часы</li>
+        </ul>
+        <ul class="quadcopters">
+          <li>Квадрокоптеры</li>
+        </ul>
       </div>
     </header>
 
@@ -43,30 +61,26 @@
 
 
       <section class="about_us">
-        <span class="decor_dash black"></span>
         <h2>О нас</h2>
-        <div>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика,
+        <p>Огромный выбор гаджетов не оставит равнодушным гика,
             который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
             DEVICE работает со многими транспортными компаниями:</p>
-          <ul>
-            <li>Деловые Линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
-          </ul>
-        </div>
-        <span class="decor_animation_dash">Подробнее о нас</span>
+        <ul>
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="animation_dash">Подробнее о нас</a>
       </section>
 
       <section class="contacts">
-        <span class="decor_dash black"></span>
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис.
           Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
          <!-- здесь будет тег карты- пока точно не знаю как это делать -->
-        <map></map>
-        <span class="decor_yellow_dash">Подробнее о нас</span>
+        <a href="#"><img src="#" alt="Карта"></a>
+        <a class="animation_dash">Напишите нам</a>
       </section>
     </main>
 
@@ -74,11 +88,12 @@
 
     <footer class="footer-main">
       <div class="upper-menu">
-        <img  class="footer-logo" src="#" alt="Device">
-        <span class="user">
-          <span class="footer-user-icon"></span>
-          <a href="#">Войти</a>
-        </span>
+        <a href="#"><img  class="footer-logo" src="#" alt="Device"></a>
+
+        <ul class="user">
+          <li class="footer-user-icon"></li>
+          <li><a href="#">Войти</a></li>
+        </ul>
         <span class="compare">
           <span class="icon compare-icon"></span>
           <a href="#">Сравнить</a>
@@ -89,19 +104,18 @@
         </span>
       </div>
       <div class="lower-menu">
-        <span class="lower-menu-adress">г. Москва, ул. Строителей, 15</span>
-        <span>
-          <a href="#" class="lower-menu-delivery">Доставка</a>
-          <a href="#" class="lower-menu-varanty">Гарантия</a>
-          <a href="#" class="lower-menu-contacts">Контакты</a>
-        </span>
+        <address>г. Москва, ул. Строителей, 15</address>
+        <ul>
+          <li><a href="#" class="lower-menu-delivery">Доставка</a></li>
+          <li><a href="#" class="lower-menu-varanty">Гарантия</a></li>
+          <li><a href="#" class="lower-menu-contacts">Контакты</a></li>
+        </ul>
         <span class="tel">Тел.: +7 (495) 495-95-95</span>
       </div>
-      <div class="links">
-        <a href="#" class="decor_dash yellow"></a>
-        <a href="#" class="social"></a>
-        <a href="#" class="HTMK-Academy">HTML-Academy</a>
-      </div>
+      <ul class="links">
+        <li><a href="#" class="social"></a></li>
+        <li><a href="#" class="HTMK-Academy">HTML-Academy</a></li>
+      </ul>
     </footer>
   </body>
 </html>
