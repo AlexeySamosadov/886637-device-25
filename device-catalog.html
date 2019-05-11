@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог товаров</title>
+</head>
+<body>
+  <header class="header">
+    <img class="header-logo" src="#" alt="Device">
+    <div class="upper-menu">
+      <span class="search">
+         <span class="icon search-icon"></span>
+            <input type="search" name="Поиск по сайту" placeholder=" Поиск по сайту">
+         </span>
+      <span class="user">
+            <span class="icon user-icon"></span>
+            <span class="user-name">Валентин Петухов</span>
+            <a href="#">Войти</a>
+      </span>
+      <span class="compare">
+            <span class="icon compare-icon"></span>
+            <a href="#">Сравнить</a>
+      </span>
+      <span class="cart">
+            <span class="icon cart-icon"></span>
+            <a href="#">Корзина</a>
+      </span>
+    </div>
+    <div class="lower-menu">
+          <span class="lower-menu-catalog">
+            <a href="#">Каталог товаров</a>
+            <span class="icon catalog-icon"></span>
+          </span>
+     <a href="#" class="lower-menu-delivery">Доставка</a>
+     <a href="#" class="lower-menu-varanty">Гарантия</a>
+     <a href="#" class="lower-menu-contacts">Контакты</a>
+    </div>
+  </header>
+
+
+  <main class="container">
+    <section class="breadcrumbs">
+      <h1>Моноподы для селфи</h1>
+      <span>
+        <a href="index.html">Главная</a> <span class="nav-arrow"></span>
+        <a href="#">Каталог товаров</a> <span class="nav-arrow"></span>
+        <a href="#">Моноподы для селфи</a> <span class="nav-arrow"></span>
+      </span>
+    </section>
+
+    <!-- Здесь будет фильтр-->
+
+    <section class="filter-left">
+      <span class="filter-dash"></span>
+      <span class="filter-left-text">Стоимость</span>
+      <input type="filter-left-range">
+      <input type="filter-left-range">
+      <span class="filter-left-range-quantity">
+        <span class="quantity-left">от 0</span>
+        <span class="quantity-right">до 5000</span>
+      </span>
+      <span class="filter-dash"></span>
+      <span class="filter-left-text">Цвет</span>
+      <ul>
+        <li><input type="checkbox" checked>Черный</li>
+        <li><input type="checkbox">Белый</li>
+        <li><input type="checkbox" checked>Синий</li>
+        <li><input type="checkbox" checked>Красный</li>
+        <li><input type="checkbox">Розовый</li>
+      </ul>
+      <span class="filter-dash"></span>
+      <span class="filter-left-text">Bluetooth</span>
+             <!-- Тут назнаю какой тег использовать  например <input type="radio" > или <input type="checkbox">    -->
+      <ul class="Bluetooth">
+        <li><input type="checkbox">Есть</li>
+        <li><input type="checkbox">Нет</li>
+      </ul>
+      <span class="decor_yellow_dash">Показать</span>
+    </section>
+
+    <section class="goods">
+      <div class="item">
+        <img src="#" alt="Любительская селфи-палка" width="360px" height="380px">
+        <span class="item-name">Любительская селфи-палка</span>
+        <span class="item-price">500 руб.</span>
+      </div>
+      <div class="item">
+        <img src="#" alt="Профессиональная селфи-палка " width="360px" height="380px">
+        <span class="item-name">Профессиональная селфи-палка </span>
+        <span class="item-price">1 500 руб.</span>
+      </div>
+      <div class="item">
+        <img src="#" alt="Непотопляемая селфи-палка" width="360px" height="380px">
+        <span class="item-name">Непотопляемая селфи-палка</span>
+        <span class="item-price">2 500 руб.</span>
+      </div>
+      <div class="item">
+        <img src="#" alt="Селфи-палка «Следуй за мной»" width="360px" height="380px">
+        <span class="item-name">Селфи-палка «Следуй за мной»</span>
+        <span class="item-price">4 900 руб.</span>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <!-- Здесь футер -->
+
+  <footer class="footer-main">
+    <div class="upper-menu">
+      <img  class="footer-logo" src="#" alt="Device">
+      <span class="user">
+          <span class="footer-user-icon"></span>
+          <span class="user-name">Валентин Петухов</span>
+          <a href="#">Выйти</a>
+        </span>
+      <span class="compare">
+          <span class="icon compare-icon"></span>
+          <a href="#">Сравнить</a>
+        </span>
+      <span class="cart">
+          <span class="icon cart-icon"></span>
+          <a href="#">Корзина</a>
+        </span>
+    </div>
+    <div class="lower-menu">
+      <span class="lower-menu-adress">г. Москва, ул. Строителей, 15</span>
+      <span>
+          <a href="#" class="lower-menu-delivery">Доставка</a>
+          <a href="#" class="lower-menu-varanty">Гарантия</a>
+          <a href="#" class="lower-menu-contacts">Контакты</a>
+        </span>
+      <span class="tel">Тел.: +7 (495) 495-95-95</span>
+    </div>
+    <div class="links">
+      <a href="#" class="decor_dash yellow"></a>
+      <a href="#" class="social"></a>
+      <a href="#" class="HTMK-Academy">HTML-Academy</a>
+    </div>
+  </footer>
+</body>
+</html>
