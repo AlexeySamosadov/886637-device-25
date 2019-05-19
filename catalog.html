@@ -10,7 +10,10 @@
       <span class="search"><!-- Здесь будет форма
             <input type="search" name="Поиск по сайту" placeholder=" Поиск по сайту"> --></span>
       <ul class="upper-menu">
-        <li class="user"><a href="#">Войти</a></li>
+        <li class="user">
+          <a href="#">Валентин Петухов</a>
+          <a href="#">Выйти</a>
+        </li>
         <li class="compare"><a href="#">Сравнить</a></li>
         <li class="cart"><a href="#">Корзина</a></li>
       </ul>
@@ -47,8 +50,27 @@
       </nav>
 
       <section class="catalog">
+
          <div class="vertical-filter">
-           <!-- Здесь будет форма -->
+           <h3>Форма</h3>
+           <form action="">
+             <lablel>Стоимость</lablel>
+             <fieldset>
+               <legend>Цвет</legend>
+               <label><input type="checkbox" checked>Черный</label>
+               <label><input type="checkbox">Белый</label>
+               <label><input type="checkbox" checked>Синий</label>
+               <label><input type="checkbox">Красный</label>
+               <label><input type="checkbox" checked>Розовый</label>
+             </fieldset>
+             <fieldset>
+               <legent>Bluetooth</legent>
+               <label><input type="radio" name="bluetoth" value="yes">Есть</label>
+               <label><input type="radio" name="bluetoth" value="no">Нет</label>
+             </fieldset>
+             <button type="submit">Показать</button>
+           </form>
+
          </div>
 
         <div class="horizontal-filter">
@@ -111,7 +133,10 @@
         <h2 class="hidden">Верхнее меню</h2>
         <a href="#"><img  class="footer-logo" src="img/footer-logo.png" alt="Device" width="163" height="35"></a>
         <ul>
-          <li class="user"><a href="#">Войти</a></li>
+          <li class="user">
+            <a href="#">Валентин Петухов</a>
+            <a href="#">Выйти</a>
+          </li>
           <li class="compare"><a href="#">Сравнить</a></li>
           <li class="cart"><a href="#">Корзина</a></li>
         </ul>
