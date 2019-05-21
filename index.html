@@ -8,7 +8,7 @@
     <header class="header-main">
       <a><img class="header-logo" src="img/logo.png" alt="Device" height="35" width="163"></a>
         <span class="search">
-          <form class="search" action="#">
+          <form class="search" action="https://echo.htmlacademy.ru/" method="get">
             <input type="search" name="Поиск по сайту" placeholder=" Поиск по сайту">
           </form>
            </span>
@@ -151,7 +151,7 @@
     </main>
 
     <footer class="footer-main">
-      <section class="upper-menu">
+      <div class="upper-menu">
         <h2 class="hidden">Верхнее меню</h2>
         <a href="#"><img  class="footer-logo" src="img/footer-logo.png" alt="Device" width="163" height="35"></a>
         <ul>
@@ -159,7 +159,7 @@
           <li class="compare"><a href="#">Сравнить</a></li>
           <li class="cart"><a href="#">Корзина</a></li>
         </ul>
-      </section>
+      </div>
       <nav class="lower-menu">
         <address>г. Москва, ул. Строителей, 15</address>
         <ul>
@@ -169,7 +169,7 @@
         </ul>
         <a href="tel:7-495-495-95-95"  class="tel">Тел.: +7 (495) 495-95-95</a>
       </nav>
-      <section class="links">
+      <div class="links">
         <h2 class="hidden">Ссылки на соцсети</h2>
         <ul>
           <li><a href="#" class="social social-facebook">Facebook</a></li>
@@ -177,28 +177,28 @@
           <li><a href="#" class="social social-twitter">Twitter</a></li>
         </ul>
         <a href="#" class="HTMK-Academy">HTML-Academy</a>
-      </section>
+      </div>
     </footer>
 
     <section class="write-us">
-      <form action="#" method="post">
-        <label for="">Ваше имя:
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <label>Ваше имя:
           <input type="text" name="name" placeholder="Имя Фамилия">
         </label>
-        <label for="">Ваш e-mail:
+        <label>Ваш e-mail:
           <input type="email" name="email" placeholder="email@example.com">
         </label>
-        <label for="">Текс письма
-          <textarea name="" id="" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <label>Текс письма
+          <textarea name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
         </label>
         <button type="submit">Отправить</button>
-        <span class="modal-close">x</span>
+        <button type="reset" class="modal-close">Закрыть</button>
       </form>
     </section>
   
     <section class="big-map">
       <img src="img/map-big.jpg" alt="Ул. Строителей, 15">
-      <span class="modal-close">x</span>
+      <button type="reset" class="modal-close">Закрыть</button>
     </section>
   </body>
 </html>

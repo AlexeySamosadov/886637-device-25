@@ -7,7 +7,7 @@
   <body>
     <header class="header">
       <a><img class="header-logo" src="img/logo.png" alt="Device" width="163" height="35"></a>
-      <form class="search" action="#">
+      <form class="search" action="https://echo.htmlacademy.ru/" method="get">
         <input type="search" name="Поиск по сайту" placeholder=" Поиск по сайту">
       </form>
       <ul class="upper-menu">
@@ -54,20 +54,24 @@
 
          <div class="vertical-filter">
            <h3>Форма</h3>
-           <form action="">
-             <lablel>Стоимость</lablel>
+           <form action="https://echo.htmlacademy.ru/" method="get">
+             <fieldset>
+               <legend>Стоимость</legend>
+               <input type="text">
+               <input type="text">
+             </fieldset>
              <fieldset>
                <legend>Цвет</legend>
-               <label><input type="checkbox" checked>Черный</label>
-               <label><input type="checkbox">Белый</label>
-               <label><input type="checkbox" checked>Синий</label>
-               <label><input type="checkbox">Красный</label>
-               <label><input type="checkbox" checked>Розовый</label>
+               <input type="checkbox" id="black" checked><label for="black">Черный</label>
+               <input type="checkbox" id="white"><label for="white" >Белый</label>
+               <input type="checkbox" id="blue" checked><label for="blue">Синий</label>
+               <input type="checkbox" id="red"><label for="red">Красный</label>
+               <input type="checkbox" id="pink" checked><label for="pink">Розовый</label>
              </fieldset>
              <fieldset>
                <legent>Bluetooth</legent>
-               <label><input type="radio" name="bluetoth" value="yes">Есть</label>
-               <label><input type="radio" name="bluetoth" value="no">Нет</label>
+               <input type="radio" id="yes" name="bluetoth" value="yes"><label for="yes">Есть</label>
+               <input type="radio" id="no" name="bluetoth" value="no"><label for="no">Нет</label>
              </fieldset>
              <button type="submit">Показать</button>
            </form>
@@ -130,18 +134,18 @@
 
     </main>
     <footer class="footer-main">
-      <section class="upper-menu">
+      <div class="upper-menu">
         <h2 class="hidden">Верхнее меню</h2>
         <a href="#"><img  class="footer-logo" src="img/footer-logo.png" alt="Device" width="163" height="35"></a>
         <ul>
-          <li class="user">
+          <li class="user">   <!-- Вот тут не понимаю что нужно сделать, id for связать? или чтото другое? -->
             <a href="#">Валентин Петухов</a>
             <a href="#">Выйти</a>
           </li>
           <li class="compare"><a href="#">Сравнить</a></li>
           <li class="cart"><a href="#">Корзина</a></li>
         </ul>
-      </section>
+      </div>
       <nav class="lower-menu">
         <address>г. Москва, ул. Строителей, 15</address>
         <ul>
@@ -151,7 +155,7 @@
         </ul>
         <a href="tel:7-495-495-95-95"  class="tel">Тел.: +7 (495) 495-95-95</a>
       </nav>
-      <section class="links">
+      <div class="links">
         <h2 class="hidden">Ссылки на соцсети</h2>
         <ul>
           <li><a href="#" class="social social-facebook">Facebook</a></li>
@@ -159,7 +163,7 @@
           <li><a href="#" class="social social-twitter">Twitter</a></li>
         </ul>
         <a href="#" class="HTMK-Academy">HTML-Academy</a>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
