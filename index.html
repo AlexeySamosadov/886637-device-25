@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header-main">
@@ -46,7 +49,7 @@
             <span class="slogan">Делай селфи, как Бен Стиллер!</span>
             <p class="description">Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a class="animation_dash">Подробнее</a>
+            <a class="animation_dash offers-dash"><span>Подробнее</span></a>
             <table>
               <tr><td>8,5 м</td><td>5 кг</td><td>Карбон</td></tr>
               <tr><th>Длина палки</th><th>Вес палки</th><th>Материал</th></tr>
@@ -57,7 +60,7 @@
             <span class="slogan">Худеем правильно!</span>
             <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы
               не пропускать занятия и соблюдать диету.</p>
-            <a class="animation_dash">Подробнее</a>
+            <a class="animation_dash offers-dash"><span>Подробнее</span></a>
             <table>
               <tr><td>48 часов</td></tr>
               <tr><th>Без подзарядки</th></tr>
@@ -68,7 +71,7 @@
             <span class="slogan">Порхает как бабочка, жалит как пчела!</span>
             <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен
               мощным лазером, замаскированным под стандартную камеру.</p>
-            <a class="animation_dash">Подробнее</a>
+            <a class="animation_dash offers-dash"><span>Подробнее</span></a>
             <table>
               <tr><td>800 м</td><td>50 м</td></tr>
               <tr><th>Дальность полета</th><th>Радиус поражения</th></tr>
@@ -94,9 +97,9 @@
         <h2>Сервисы</h2>
         <div class="services-left-column">
           <ul>
-            <li><label class="animation_dash">Доставка</label></li>
-            <li><label class="animation_dash">Гарантия</label></li>
-            <li><label class="animation_dash">Кредит</label></li>
+            <li><label class="animation_dash services-dash">Доставка</label></li>
+            <li><label class="animation_dash services-dash">Гарантия</label></li>
+            <li><label class="animation_dash services-dash">Кредит</label></li>
           </ul>
         </div>
         <div class="delivery">
@@ -119,39 +122,39 @@
       <section class="logotypes">
         <h2>Логотипы</h2>
         <ul>
-          <li><a href="#"><img src="img/logo-1.png" alt="DJI" width="260" height="100"></a></li>
-          <li><a href="#"><img src="img/logo-2.png" alt="SP ADGETS" width="260" height="100"></a></li>
-          <li><a href="#"><img src="img/logo-3.png" alt="GoPro" width="260" height="100"></a></li>
-          <li><a href="#"><img src="img/logo-4.png" alt="VIVE" width="260" height="100"></a></li>
+          <li><a href="#"><img src="img/logo-1-1.png" alt="DJI" width="260" height="100"></a></li>
+          <li><a href="#"><img src="img/logo-2-1.png" alt="SP ADGETS" width="260" height="100"></a></li>
+          <li><a href="#"><img src="img/logo-3-1.png" alt="GoPro" width="260" height="100"></a></li>
+          <li><a href="#"><img src="img/logo-4-1.png" alt="VIVE" width="260" height="100"></a></li>
         </ul>
       </section>
 
-      <section class="about_us">
+      <section class="about-us">
         <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика,
+        <p class="zero-letter-spacing">Огромный выбор гаджетов не оставит равнодушным гика,
             который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+        <p class="zero-letter-spacing">Мы можем доставить ваш товар в самые отдаленные точки России!
             DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
+        <ul class="zero-letter-spacing">
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#" class="animation_dash">Подробнее о нас</a>
+        <a href="#" class="animation_dash about-us-dash"><span>Подробнее о нас</span></a>
       </section>
 
       <section class="contacts">
         <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис.
+        <p class="zero-letter-spacing">Вы можете забрать товар сами, заехав в наш офис.
           Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
          <!-- здесь будет тег карты- пока точно не знаю как это делать -->
         <a href="#"><img src="img/map.jpg" alt="Карта" width="560" height="222"></a>
-        <a href="#" class="animation_dash">Напишите нам</a>
+        <a href="#" class="animation_dash contacts-dash"><span>Напишите нам</span></a>
       </section>
     </main>
 
     <footer class="footer-main">
-      <div class="upper-menu">
+      <section class="upper-menu">
         <h2 class="hidden">Верхнее меню</h2>
         <a href="#"><img  class="footer-logo" src="img/footer-logo.png" alt="Device" width="163" height="35"></a>
         <ul>
@@ -159,9 +162,9 @@
           <li class="compare"><a href="#">Сравнить</a></li>
           <li class="cart"><a href="#">Корзина</a></li>
         </ul>
-      </div>
+      </section>
       <nav class="lower-menu">
-        <address>г. Москва, ул. Строителей, 15</address>
+        <address class="zero-letter-spacing">г. Москва, ул. Строителей, 15</address>
         <ul>
           <li><a href="#" class="lower-menu-delivery">Доставка</a></li>
           <li><a href="#" class="lower-menu-varanty">Гарантия</a></li>
@@ -169,7 +172,7 @@
         </ul>
         <a href="tel:7-495-495-95-95"  class="tel">Тел.: +7 (495) 495-95-95</a>
       </nav>
-      <div class="links">
+      <section class="links">
         <h2 class="hidden">Ссылки на соцсети</h2>
         <ul>
           <li><a href="#" class="social social-facebook">Facebook</a></li>
@@ -177,22 +180,19 @@
           <li><a href="#" class="social social-twitter">Twitter</a></li>
         </ul>
         <a href="https://htmlacademy.ru/" class="HTMK-Academy">HTML-Academy</a>
-      </div>
+      </section>
     </footer>
 
     <section class="write-us">
       <form action="https://echo.htmlacademy.ru/" method="get">
-        <label>Ваше имя:
-          <input type="text" name="name" placeholder="Имя Фамилия">
-        </label>
-        <label>Ваш e-mail:
-          <input type="email" name="email" placeholder="email@example.com">
-        </label>
-        <label>Текс письма
-          <textarea name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        </label>
-        <button type="submit">Отправить</button>
-        <button type="button" class="modal-close">Закрыть</button>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" id="email" name="email" placeholder="email@example.com">
+        <label for="text">Текс письма</label>
+        <textarea id="text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <button class="button animation_dash" type="submit">Отправить</button>
+        <button class="button animation_dash" type="button" class="modal-close">Закрыть</button>
       </form>
     </section>
   
