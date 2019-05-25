@@ -22,35 +22,47 @@ a:active {
 }
 
 /* Кнопки */
-.animation_dash {
+.button {
   display: inline-block;
-  background-color: #f0c52e;
+  background-color: transparent;
   background-position: center; /* Никак не понимаю как выровнять эту черточку по центру,
                                       как ее можно поставить в середину?*/
   text-align: center;
   height: 8px;
 }
-.animation_dash:hover,
-.animation_dash:focus {
+.button:before {
+  content: '';
+  display: block;
+  position: relative;
+  top: 15.5px;
+  height: 8px;
+
+  background-color: #f0c52e ;
+  z-index: -1;
+
+}
+.button:hover,
+.button:focus {
+  background-color: #f0c52e;
   height: 40px;
   opacity: 1;
 }
-.animation_dash:active span {
+.button:active span {
   opacity: 0.3;
 }
-.offers-dash {
+.button-offers {
   width: 220px;
 }
-.services-dash {
+.button-services {
   width: 160px;
 }
-.services-dash:active {
+.button-services:active {
   width:278;
   background-color: #000000;
   color: #f7e184;
 }
-.about-us-dash,
-.contacts-dash {
+.button-about-us,
+.button-contacts {
   width: 260px;
 }
 
@@ -123,7 +135,7 @@ a:active {
   line-height: 56px;
   letter-spacing: 0.17px;
 }
-.animation_dash {
+.button {
   font-family: "Gilroy - Extra Bold", sans-serif;
   color: #000000;
   font-size: 18px;
