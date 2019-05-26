@@ -70,7 +70,8 @@ a:active {
 }
 
 /* Хеадер  */
-.header-main {
+.header-main,
+.header {
   background-color: rgba(240, 197, 46, 0.5);
   background-position: center;
   background-repeat: repeat;
@@ -209,7 +210,6 @@ a:active {
 }
 
 
-
 /* Футер */
 .footer-main {
   background-color: #464646;
@@ -265,4 +265,97 @@ a:active {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+
+/* Каталог */
+.container h1 {
+  font-family: "Gilroy - Extra Bold";
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.17px;
+}
+.breadcrumbs ul{
+  list-style:  none;
+}
+.breadcrumbs a {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  opacity: 0.3;
+}
+
+/* Фильтр */
+.vertical-filter legend {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+                              /* Убрать обводку  */
+}
+.vertical-filter label {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+}
+.horizontal-filter span {
+  font-family: "Gilroy - Extra Bold";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+}
+.horizontal-filter ul {
+  list-style:none;
+}
+.horizontal-filter a {
+  opacity: 0.3;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* Сами товары */
+.goods ul {
+  list-style: none;
+}
+.item-name {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+.item-price {
+  color: #464646;
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+}
+.back-forward ul {
+  list-style: none;
+}
+.back-forward li {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+
+}
+.page {
+  opacity: 0.3;
 }

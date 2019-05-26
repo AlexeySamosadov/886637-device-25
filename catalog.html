@@ -3,6 +3,9 @@
   <head>
       <meta charset="UTF-8">
       <title>Каталог товаров</title>
+      <link href="css/fonts.css" rel="stylesheet" type="text/css" />
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -67,18 +70,19 @@
                <input type="checkbox" id="pink" checked><label for="pink">Розовый</label>
              </fieldset>
              <fieldset>
-               <legent>Bluetooth</legent>
+               <legend>Bluetooth</legend>
                <input type="radio" id="yes" name="bluetoth" value="yes"><label for="yes">Есть</label>
                <input type="radio" id="no" name="bluetoth" value="no"><label for="no">Нет</label>
              </fieldset>
-             <button type="submit">Показать</button>
+             <button class="button" type="submit">Показать</button>
            </form>
 
          </div>
 
         <div class="horizontal-filter">
-          <span class="sort">СОРТИРОВКА</span>
-          <ul>
+          <span>Фильтр:</span>
+          <span class="sort">СОРТИРОВКА:</span>
+          <ul class="zero-letter-spacing">
             <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По популярности</a></li>
@@ -121,11 +125,11 @@
         </div>
         <div class="back-forward">
           <ul>
-            <li><a href="#" class="back">НАЗАД</a></li>
-            <li><a href="#" class="page current-page"></a>1</li>
-            <li><a href="#" class="page page"></a>2</li>
-            <li><a href="#" class="page"></a>3</li>
-            <li><a href="#" class="forward">ВПЕРЕД</a></li>
+            <li class="back"><a href="#">НАЗАД</a></li>
+            <li class="current-page"><a href="#"></a>1</li>
+            <li class="page"><a href="#"></a>2</li>
+            <li class="page"><a href="#"></a>3</li>
+            <li class="forward"><a href="#">ВПЕРЕД</a></li>
           </ul>
         </div>
       </section>
