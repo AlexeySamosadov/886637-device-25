@@ -2,18 +2,18 @@
   font-family: "Open Sans";
   src: url("../fonts/web/opensans.woff") format("woff"),
        url("../fonts/web/opensans.woff2") format("woff2");
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "Open Sans Light";
+  font-family: "Open Sans";
   src: url("../fonts/web/opensanslight.woff") format("woff"),
   url("../fonts/web/opensanslight.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy";
   src: url(../fonts/web/gilroyextrabold.woff) format("woff"),
   url(../fonts/web/gilroyextrabold.woff2) format("woff2");
   font-weight: 400;

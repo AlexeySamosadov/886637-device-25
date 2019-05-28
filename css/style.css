@@ -1,10 +1,15 @@
 body {
+  margin: 0;
+  padding: 0;
+
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.15px;
   color: #464646;
+
+  background-color: #ffffff;
 }
 a {
   color: #000000;
@@ -24,6 +29,13 @@ a:active {
 /* Класс обнуляющий стили списка*/
 .no-list {
   list-style: none;
+}
+/* Класс для SVG*/
+svg image {
+  filter: url(#linear);
+}
+svg image:hover{
+  filter: none;
 }
 
 /* Кнопки */
@@ -170,7 +182,7 @@ a:active {
 }
 .catalog-menu-catalog,
 .header-lower-menu a {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -229,12 +241,12 @@ a:active {
 .offers th {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.13px;
 }
 .slogan {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy", sans-serif;
   color: #000000;
   font-size: 47px;
   font-weight: 400;
@@ -242,7 +254,7 @@ a:active {
   letter-spacing: 0.17px;
 }
 .button {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy", sans-serif;
   color: #000000;
   font-size: 18px;
   font-weight: 400;
@@ -253,7 +265,7 @@ a:active {
 
 /* Краткий каталог */
 .landing-catalog a {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy", sans-serif;
 
   background-color: rgba(240, 197, 46, 0.5);
   font-size: 18px;
@@ -275,7 +287,7 @@ a:active {
 .about-us h2,
 .contacts h2 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy", sans-serif;
   font-size: 47px;
   font-weight: 400;
   line-height: 48px;
@@ -294,15 +306,14 @@ a:active {
 }
 
 /* О нас */
-.about-us p:first-of-type {
-  font-family: "Open Sans Light", sans-serif; /* На макете не совсем понимаю где какой шрифт */
-}
-.about-us p:nth-of-type(2) {
-  font-family: "Open Sans";     /* На макете не совсем понимаю где какой шрифт */
+.about-us p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
 .about-us li {
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
 }
 
 
@@ -314,6 +325,7 @@ a:active {
   opacity: 0.7;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   line-height: 36px;
 }
 .upper-menu-list a:hover,
@@ -332,6 +344,7 @@ a:active {
 .tel {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 15px;
 }
 .links li a {
@@ -348,13 +361,13 @@ a:active {
 /* Всплывающее окно "Напишите нам"*/
 .write-us label {
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
 }
 .write-us input {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -362,7 +375,7 @@ a:active {
 
 /* Каталог */
 .container h1 {
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy", sans-serif;
   font-size: 47px;
   font-weight: 400;
   line-height: 48px;
@@ -370,7 +383,8 @@ a:active {
 }
 .breadcrumbs a {
   color: #000000;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.14px;
@@ -380,7 +394,7 @@ a:active {
 /* Фильтр */
 .vertical-filter legend {
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -389,13 +403,14 @@ a:active {
 }
 .vertical-filter label {
   color: #000000;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.14px;
 }
 .horizontal-filter span {
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -405,7 +420,8 @@ a:active {
 .horizontal-filter a {
   opacity: 0.3;
   color: #000000;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -414,7 +430,7 @@ a:active {
 /* Сами товары */
 .item-name {
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -422,14 +438,15 @@ a:active {
 }
 .item-price {
   color: #464646;
-  font-family: Gilroy;
+  font-family: Gilroy, sans-serif;
+  font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.16px;
 }
 .back-forward li {
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
