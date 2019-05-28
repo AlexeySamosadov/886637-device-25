@@ -21,21 +21,38 @@ a:active {
   letter-spacing: 0;
 }
 
+/* Класс обнуляющий стили списка*/
+.no-list {
+  list-style: none;
+}
+
 /* Кнопки */
 .button {
-  display: inline-block;
-  background-color: transparent;
-  background-position: center; /* Никак не понимаю как выровнять эту черточку по центру,
-                                      как ее можно поставить в середину?*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  min-width: 180px;
+
+  font: inherit;
   text-align: center;
-  height: 8px;
+  line-height: 70px;
+
+  background-color: transparent;
+
+  border: 1px solid green;
 }
 .button:before {
   content: '';
-  display: block;
-  position: relative;
-  top: 15.5px;
+
+  position: absolute;
+  top: 15px;
+  left: -1px;
+
   height: 8px;
+  width: 100%;
+  border: 1px solid red;
 
   background-color: #f0c52e ;
   z-index: -1;
@@ -72,9 +89,24 @@ a:active {
 /* Хеадер  */
 .header-main,
 .header {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 1160px;
+  height: 299px;
+  margin: 40px auto;
+
   background-color: rgba(240, 197, 46, 0.5);
   background-position: center;
   background-repeat: repeat;
+}
+.header-logo {
+  position: absolute;
+  top: -19px;
+  left: 60px;
 }
 .header-logo:hover,
 .header-logo:focus {
@@ -83,7 +115,17 @@ a:active {
 .header-logo:active{
   opacity: 0.3;
 }
-.search input {
+.search {
+  margin-right: auto;
+  margin-top: 41px;
+  margin-left: 99px;
+  border: 1px solid red;
+}
+.search-form {
+      /*Удалить потом*/
+  border: 1px solid blue;     /*Удалить потом*/
+}
+ .search input {
   color: #000000;
   opacity: 0.3;
   background-color: transparent;
@@ -95,14 +137,39 @@ a:active {
 .search input:focus {
   opacity: 1;
 }
-.upper-menu,
-.catalog-menu,
-.catalog-menu-2,
-.lower-menu {
-  list-style: none;
+.upper-menu {
+  display: flex;
+  margin-top: 42px;
+  margin-right: 61px;
+  width: 500px;
+  justify-content: flex-end;
+  border: 1px solid green;
 }
-.catalog-menu > li > a,
-.lower-menu ul > li > a {
+.upper-menu li{
+  border: 1px solid black;
+}
+.user {
+  margin-right: auto;
+}
+.compare {
+  margin-right: 60px;
+}
+.header-main nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid orange;
+  margin-top: 2px;
+}
+.catalog-menu {
+  border: 1px solid red;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.catalog-menu-catalog,
+.header-lower-menu a {
   font-family: "Gilroy - Extra Bold", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -110,12 +177,47 @@ a:active {
   text-transform: uppercase;
   letter-spacing: 3.6px;
 }
+.catalog-menu-catalog {
+  margin-left: 16px;
+  border: 1px solid green;
+}
+.catalog-menu-2 {
+  position: absolute;
+  display: flex;
+  top: 50px;
+  left: 1px;
+  justify-content: flex-start;
+
+  border: 1px solid blue;
+  z-index: 10;
+}
+.catalog-menu-2 ul {
+  border: 1px solid violet;
+}
+.catalog-menu:hover .catalog-menu-2 {
+  display: flex;
+}
+.header-lower-menu {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid red;
+  margin-right: 60px;
+  width: 500px;
+}
+.varanty {
+  margin-left: 39px;
+}
+.contacts {
+  margin-left: auto;
+  margin-right: 0;
+}
+.contacts a {
+  margin-right: 0;
+  padding-right: 0;
+}
 
 /* Основное содержимое */
    /*Спецпредложения*/
-.offers ul {
-  list-style: none;
-}
 .offers td {
   color: #000000;
   font-family: "Gilroy", sans-serif;
@@ -150,9 +252,6 @@ a:active {
 }
 
 /* Краткий каталог */
-.landing-catalog ul {
-  list-style: none;
-}
 .landing-catalog a {
   font-family: "Gilroy - Extra Bold", sans-serif;
 
@@ -184,9 +283,6 @@ a:active {
 }
 
 /* Логотипы */
-.logotypes ul {
-  list-style: none;
-}
 .logotypes a {
   filter: grayscale(100%);
   opacity: 0.2;
@@ -214,23 +310,20 @@ a:active {
 .footer-main {
   background-color: #464646;
 }
-.footer-main ul {
-  list-style: none;
-}
-.upper-menu ul a {
+.upper-menu-list a {
   opacity: 0.7;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   line-height: 36px;
 }
 .upper-menu-list a:hover,
-.upper-menu-list a:focus { /* .upper-menu-list a:focus   В спецификации этого нет, вопрос могу я фокус оставлять или не нужно? */
+.upper-menu-list a:focus {
   opacity: 1;
 }
 .upper-menu-list a:active {
   opacity: 0.3;
 }
-.lower-menu ul a {
+.lower-menu-list a {
   color: #ffffff;
 }
 .lower-menu address {
@@ -275,9 +368,6 @@ a:active {
   line-height: 48px;
   letter-spacing: 0.17px;
 }
-.breadcrumbs ul{
-  list-style:  none;
-}
 .breadcrumbs a {
   color: #000000;
   font-family: "Open Sans";
@@ -312,9 +402,6 @@ a:active {
   text-transform: uppercase;
   letter-spacing: 0.91px;
 }
-.horizontal-filter ul {
-  list-style:none;
-}
 .horizontal-filter a {
   opacity: 0.3;
   color: #000000;
@@ -325,9 +412,6 @@ a:active {
 }
 
 /* Сами товары */
-.goods ul {
-  list-style: none;
-}
 .item-name {
   color: #000000;
   font-family: "Gilroy - Extra Bold";
@@ -343,9 +427,6 @@ a:active {
   line-height: 24px;
   letter-spacing: 0.16px;
 }
-.back-forward ul {
-  list-style: none;
-}
 .back-forward li {
   color: #000000;
   font-family: "Gilroy - Extra Bold";
@@ -354,8 +435,14 @@ a:active {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.91px;
-
 }
 .page {
   opacity: 0.3;
+}
+/* Модальные окна */
+
+.write-us,
+.big-map
+{
+  display: none;
 }
