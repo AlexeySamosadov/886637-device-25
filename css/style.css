@@ -29,7 +29,7 @@ a:active {
 /* Класс обнуляющий стили списка*/
 .no-list {
   list-style: none;
-  padding-inline-start: 0;   /* Вот где была проблема с отступами где я спрашивал) */
+  padding: 0;   /* Вот где была проблема с отступами где я спрашивал) */
 }
 /* Класс для SVG*/
 svg image {
@@ -192,21 +192,27 @@ svg image:hover{
   letter-spacing: 3.6px;
 }
 .catalog-menu-catalog {
-  margin-left: 16px;
+  display: block;
+  height: 30px;
+  padding-top: 3px;
+  margin-left: 56px;
   border: 1px solid green;
 }
 .catalog-menu-2 {
   position: absolute;
-  display: flex;
   top: 50px;
-  left: 1px;
+  left: 57px;
+  display: flex;
   justify-content: flex-start;
-
-  border: 1px solid blue;
+  width: 557px;
   z-index: 10;
 }
-.catalog-menu-2 ul {
-  border: 1px solid violet;
+.catalog-menu-2 ul:first-child {
+  flex-basis: 200px;
+  margin-right: 40px;
+}
+.catalog-menu-2 ul:last-child {
+  margin-left: auto;
 }
 .catalog-menu:hover .catalog-menu-2 {
   display: flex;
