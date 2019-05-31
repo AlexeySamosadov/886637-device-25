@@ -29,6 +29,7 @@ a:active {
 /* Класс обнуляющий стили списка*/
 .no-list {
   list-style: none;
+  padding-inline-start: 0;   /* Вот где была проблема с отступами где я спрашивал) */
 }
 /* Класс для SVG*/
 svg image {
@@ -104,7 +105,7 @@ svg image:hover{
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
   width: 1160px;
@@ -151,10 +152,11 @@ svg image:hover{
 }
 .upper-menu {
   display: flex;
+  justify-content: flex-start;
   margin-top: 42px;
   margin-right: 61px;
   width: 500px;
-  justify-content: flex-end;
+
   border: 1px solid green;
 }
 .upper-menu li{
@@ -215,6 +217,10 @@ svg image:hover{
   border: 1px solid red;
   margin-right: 60px;
   width: 500px;
+}
+.header-lower-menu li {
+  border: 1px solid orange;
+
 }
 .varanty {
   margin-left: 39px;
