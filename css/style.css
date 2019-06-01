@@ -116,6 +116,9 @@ svg image:hover{
   background-position: center;
   background-repeat: repeat;
 }
+.header {
+  height: 186px;
+}
 .header-logo {
   position: absolute;
   top: -19px;
@@ -150,7 +153,7 @@ svg image:hover{
 .search input:focus {
   opacity: 1;
 }
-.upper-menu {
+.header-upper-menu {
   display: flex;
   justify-content: flex-start;
   margin-top: 42px;
@@ -159,28 +162,35 @@ svg image:hover{
 
   border: 1px solid green;
 }
-.upper-menu li{
+.header-upper-menu li{
   border: 1px solid black;
+}
+.user-name {
+  margin-right: 15px;
 }
 .user {
   margin-right: auto;
 }
+.user-exit {
+  opacity: 0.3
+}
 .compare {
   margin-right: 60px;
 }
-.header-main nav {
+.header-main nav,
+.header nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   border: 1px solid orange;
   margin-top: 2px;
+  border: 1px solid blue;
 }
-.catalog-menu {
+.header-catalog-menu {
   border: 1px solid red;
   position: relative;
   display: flex;
   justify-content: flex-start;
-
 }
 .catalog-menu-catalog,
 .header-lower-menu a {
@@ -195,18 +205,40 @@ svg image:hover{
   display: block;
   height: 30px;
   padding-top: 3px;
-  margin-left: 56px;
+  padding-left: 56px;
   border: 1px solid green;
+}
+.catalog-menu-2:after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: -59px;
+  height: 113px;
+  width: 1160px;
+  background-color: rgba(240, 197, 46, 0.5);
+  z-index: -1;
+  display: none;
+
+}
+.header .catalog-menu-catalog:hover ~ .catalog-menu-2:after
+{
+  opacity: 1;
+  display: block;
 }
 .catalog-menu-2 {
   position: absolute;
   top: 50px;
   left: 57px;
-  display: flex;
   justify-content: flex-start;
   width: 557px;
   z-index: 10;
+  display: none;
 }
+.catalog-menu-catalog:hover ~ .catalog-menu-2 {
+  display: flex;
+}
+
+
 .catalog-menu-2 ul:first-child {
   flex-basis: 200px;
   margin-right: 40px;
