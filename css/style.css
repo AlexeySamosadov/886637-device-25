@@ -25,7 +25,15 @@ a:active {
 .zero-letter-spacing {
   letter-spacing: 0;
 }
-
+img {
+  max-width: 100%;
+}
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 /* Класс визуально скрывающий элементы */
 .visually-hidden {
   display: none; /* Пока так потом скрою для читалок правильно*/
@@ -163,15 +171,10 @@ svg image:hover{
 .user-name {
   margin-right: 15px;
 }
-.user {
-  margin-right: auto;
-}
 .user-exit {
   opacity: 0.3
 }
-.compare {
-  margin-right: 60px;
-}
+
 .header-main nav,
 .header nav {
   width: 100%;
@@ -352,7 +355,10 @@ svg image:hover{
 .footer-main {
   background-color: #464646;
   border: 1px solid transparent;
-  padding-top: 50px
+  padding-top: 53px;
+  width: 1440px;
+  min-height: 323px;
+  margin: 0 auto;
 }
 
 .footer-upper-menu,
@@ -362,12 +368,19 @@ svg image:hover{
   width: 1160px;
   margin: 0 auto;
 }
-.footer-upper-menu {
+.footer-upper-menu,
+.footer-lower-menu {
   justify-content: space-between;
   align-items: center;
 }
 .upper-menu-list {
   display: flex;
+  width: 330px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.upper-menu-list li {
+  padding-left: 30px;
 }
 .upper-menu-list a {
   opacity: 0.7;
@@ -383,17 +396,35 @@ svg image:hover{
 .upper-menu-list a:active {
   opacity: 0.3;
 }
+.lower-menu-list {
+  display: flex;
+  justify-content: space-between;
+  width: 436px;
+  margin-right: 30px;
+}
 .lower-menu-list a {
   color: #ffffff;
+  font-family: "Gilroy - Extra Bold", sans-serif;;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
-.footer-lower-menu address {
+.footer-lower-menu address,
+.footer-lower-menu > a {
   color: #ffffff;
+  font-weight: 300;
 }
 .tel {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 15px;
+}
+.links {
+  justify-content: flex-end;
+  align-items: center;
 }
 .links li a {
   opacity: 0.3;
@@ -405,7 +436,12 @@ svg image:hover{
 .links li a:active {
   opacity: 0.1;
 }
-
+.social {
+  display: flex;
+  margin-right: 350px;
+  justify-content: space-between;
+  width: 250px;
+}
 /* Всплывающее окно "Напишите нам"*/
 .write-us label {
   color: #000000;
