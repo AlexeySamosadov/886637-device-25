@@ -163,7 +163,7 @@ svg image:hover{
 }
 .header-upper-menu {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin-top: 43px;
   margin-right: 60px;
   width: 500px;
@@ -246,18 +246,18 @@ svg image:hover{
 }
 .header-lower-menu {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin-right: 56px;
   width: 505px;
 }
-.varanty {
+.header-varanty {
   margin-left: 33px;
 }
-.contacts {
+.header-contacts {
   margin-left: auto;
   margin-right: 0;
 }
-.contacts a {
+.header-contacts a {
   margin-right: 0;
   padding-right: 0;
 }
