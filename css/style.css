@@ -151,7 +151,6 @@ svg image:hover{
 }
 
 /* Хеадер  */
-.header-main,
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -160,15 +159,12 @@ svg image:hover{
   width: 1160px;
   height: 226px;
   margin: 0 auto;
-  background-image: linear-gradient( to bottom, #ffffff 17.7% ,rgba(240, 197, 46, 0.5) 17.7%);
+  background-image: linear-gradient( to bottom, #ffffff 17.7% , #f0c52e 17.7%);
   padding-top: 23px;
   padding-left: 60px;
 
 }
-.header {
-  height: 186px;
-  margin-left: 30px;
-}
+
 .header-logo {
   width: 100%;
 }
@@ -203,14 +199,16 @@ svg image:hover{
   margin-right: 60px;
   width: 500px;
 }
+.header-upper-menu li{
+  padding-left: 30px;
+}
 .user-name {
   margin-right: 15px;
 }
 .user-exit {
-  opacity: 0.3
+  opacity: 0.3;
+  margin-left: -50px;   /*Временно потом перераспределить justify content когда буду добавлять иконки*/
 }
-
-.header-main nav,
 .header nav {
   width: 100%;
   display: flex;
@@ -235,8 +233,8 @@ svg image:hover{
   display: block;
   height: 30px;
   padding-top: 3px;
-  padding-left: 60px;
 }
+ /*
 .header .catalog-menu-2:after {
   content: "";
   position: absolute;
@@ -247,34 +245,38 @@ svg image:hover{
   background-color: rgba(240, 197, 46, 0.5);
   z-index: -1;
   display: block;
-
 }
 
 .header .catalog-menu-catalog:hover ~ .catalog-menu-2:after
 {
   opacity: 1;
   display: block;
-}
+} */
 .catalog-menu-2 {
   position: absolute;
   top: 50px;
-  left: 57px;
+  left: -60px;
   justify-content: flex-start;
-  width: 557px;
+  width: 1160px;
+  padding-left: 60px;
   z-index: 10;
   display: none;
+  background-color: #f0c52e;
+
 }
-.catalog-menu-catalog:hover ~ .catalog-menu-2 {
+.catalog-menu-catalog:hover ~ .catalog-menu-2,
+.catalog-menu-catalog:focus ~ .catalog-menu-2,
+.catalog-menu-catalog:active ~ .catalog-menu-2 {
   display: flex;
 }
 
 
 .catalog-menu-2 ul:first-child {
   flex-basis: 200px;
-  margin-right: 40px;
+  margin-right: 45px;
 }
-.catalog-menu-2 ul:last-child {
-  margin-left: auto;
+.catalog-menu-2 ul:nth-child(2) {
+  margin-right: 75px;
 }
 .catalog-menu:hover .catalog-menu-2 {
   display: flex;
