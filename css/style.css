@@ -450,7 +450,6 @@ svg image:hover{
   background-color: #464646;
   border: 1px solid transparent;
   padding-top: 53px;
-  width: 1440px;
   min-height: 323px;
   margin: 0 auto;
 }
@@ -558,7 +557,20 @@ svg image:hover{
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 0.17px;
+  width: 1160px;
+  margin: 0 auto;
+  padding-left: 60px;
 
+}
+.breadcrumbs {
+  width: 1160px;
+  margin: 0 auto;
+}
+.breadcrumbs ul {
+  width: 400px;
+  margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
 }
 .breadcrumbs a {
   color: #000000;
@@ -569,6 +581,11 @@ svg image:hover{
   letter-spacing: 0.14px;
   opacity: 0.3;
 }
+/* Каталог*/
+.catalog {
+  display: flex;
+}
+
 
 /* Фильтр */
 .vertical-filter legend {
