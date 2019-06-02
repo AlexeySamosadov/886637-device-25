@@ -138,13 +138,8 @@ svg image:hover{
 }
 .search {
   margin-right: auto;
-  margin-top: 41px;
+  margin-top: 43px;
   margin-left: 99px;
-  border: 1px solid red;
-}
-.search-form {
-      /*Удалить потом*/
-  border: 1px solid blue;     /*Удалить потом*/
 }
  .search input {
   color: #000000;
@@ -161,14 +156,9 @@ svg image:hover{
 .header-upper-menu {
   display: flex;
   justify-content: flex-start;
-  margin-top: 42px;
-  margin-right: 61px;
+  margin-top: 43px;
+  margin-right: 60px;
   width: 500px;
-
-  border: 1px solid green;
-}
-.header-upper-menu li{
-  border: 1px solid black;
 }
 .user-name {
   margin-right: 15px;
@@ -187,12 +177,9 @@ svg image:hover{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border: 1px solid orange;
-  margin-top: 2px;
-  border: 1px solid blue;
+  margin-top: 9px;
 }
 .header-catalog-menu {
-  border: 1px solid red;
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -210,21 +197,21 @@ svg image:hover{
   display: block;
   height: 30px;
   padding-top: 3px;
-  padding-left: 56px;
-  border: 1px solid green;
+  padding-left: 60px;
 }
-.catalog-menu-2:after {
+.header .catalog-menu-2:after {
   content: "";
   position: absolute;
-  top: 26px;
-  left: -59px;
+  top: 25px;
+  left: -57px;
   height: 113px;
   width: 1160px;
   background-color: rgba(240, 197, 46, 0.5);
   z-index: -1;
-  display: none;
+  display: block;
 
 }
+
 .header .catalog-menu-catalog:hover ~ .catalog-menu-2:after
 {
   opacity: 1;
@@ -257,16 +244,11 @@ svg image:hover{
 .header-lower-menu {
   display: flex;
   justify-content: flex-start;
-  border: 1px solid red;
-  margin-right: 60px;
-  width: 500px;
-}
-.header-lower-menu li {
-  border: 1px solid orange;
-
+  margin-right: 56px;
+  width: 505px;
 }
 .varanty {
-  margin-left: 39px;
+  margin-left: 33px;
 }
 .contacts {
   margin-left: auto;
@@ -379,7 +361,6 @@ svg image:hover{
   display: flex;
   width: 1160px;
   margin: 0 auto;
-  border: 1px solid blue;
 }
 .footer-upper-menu {
   justify-content: space-between;
@@ -387,7 +368,6 @@ svg image:hover{
 }
 .upper-menu-list {
   display: flex;
-  border: 1px solid red;
 }
 .upper-menu-list a {
   opacity: 0.7;
