@@ -264,6 +264,22 @@ svg image:hover{
 
 /* Основное содержимое */
    /*Спецпредложения*/
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+.offers {
+  width: 1160px;
+  margin: 0 auto;
+}
+.offers-list {
+  display: flex;
+}
+.offers-list li {
+  flex-basis: 1010px;
+}
+
+
 .offers td {
   color: #000000;
   font-family: "Gilroy", sans-serif;
@@ -298,6 +314,13 @@ svg image:hover{
 }
 
 /* Краткий каталог */
+.landing-catalog {
+  width: 1160px;
+  margin: 0 auto;
+}
+.landing-catalog-list {
+  display: flex;
+}
 .landing-catalog a {
   font-family: "Gilroy", sans-serif;
 
@@ -316,7 +339,12 @@ svg image:hover{
   opacity: 0.3;
 }
 
+
 /* Cервисы */
+.services {
+  width: 1160px;
+  margin: 0 auto;
+}
 .services h3,
 .about-us h2,
 .contacts h2 {
@@ -329,6 +357,10 @@ svg image:hover{
 }
 
 /* Логотипы */
+.logotypes {
+  width: 1160px;
+  margin: 0 auto;
+}
 .logotypes a {
   filter: grayscale(100%);
   opacity: 0.2;
@@ -338,8 +370,21 @@ svg image:hover{
   filter: grayscale(0%);
   opacity: 1;
 }
+.logotypes-list {
+  display: flex;
+}
 
 /* О нас */
+.container-bottom {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
+.about-us,
+.contacts {
+  width: 500px;
+  border: 1px solir red;
+}
 .about-us p {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -464,6 +509,7 @@ svg image:hover{
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 0.17px;
+
 }
 .breadcrumbs a {
   color: #000000;
