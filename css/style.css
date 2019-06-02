@@ -1,3 +1,41 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/web/opensans.woff2") format("woff2"),
+  url("../fonts/web/opensans.woff") format("woff");
+
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src:  url("../fonts/web/opensanslight.woff2") format("woff2"),
+  url("../fonts/web/opensanslight.woff") format("woff");
+
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src:  url("../fonts/web/gilroyextrabold.woff2") format("woff2"),
+  url(../fonts/web/gilroyextrabold.woff) format("woff");
+
+  font-weight: 400;   /* поменять на 800*/
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src:  url("../fonts/web/gilroylight.woff2") format("woff2"),
+  url("../fonts/web/gilroylight.woff") format("woff");
+
+  font-weight: 300;
+  font-style: normal;
+}
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 body {
   margin: 0;
   padding: 0;
@@ -28,12 +66,7 @@ a:active {
 img {
   max-width: 100%;
 }
-html {
-  box-sizing: border-box;
-}
-*, *::before, *::after {
-  box-sizing: inherit;
-}
+
 /* Класс визуально скрывающий элементы */
 .visually-hidden {
   display: none; /* Пока так потом скрою для читалок правильно*/
@@ -67,18 +100,20 @@ svg image:hover{
 
   background-color: transparent;
 
-  border: 1px solid green;
+
+
 }
 .button:before {
   content: '';
 
   position: absolute;
-  top: 15px;
+  top: 16px;
   left: -1px;
 
   height: 8px;
   width: 100%;
-  border: 1px solid red;
+  transition: height 300ms, transform 270ms ;
+
 
   background-color: #f0c52e ;
   z-index: -1;
@@ -86,9 +121,12 @@ svg image:hover{
 }
 .button:hover,
 .button:focus {
-  background-color: #f0c52e;
-  height: 40px;
   opacity: 1;
+}
+.button:hover::before,
+.button:focus::before {
+  height: 40px;
+  transform: translateY(-40%);
 }
 .button:active span {
   opacity: 0.3;
@@ -118,16 +156,12 @@ svg image:hover{
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
   align-content: flex-start;
   width: 1160px;
   height: 299px;
   margin: 40px auto;
 
   background-color: rgba(240, 197, 46, 0.5);
-  background-position: center;
-  background-repeat: repeat;
 }
 .header {
   height: 186px;
@@ -275,10 +309,14 @@ svg image:hover{
 .offers-list {
   display: flex;
 }
-.offers-list li {
-  flex-basis: 1010px;
-}
 
+.offer {
+  width: 1010px;
+}
+.offer:nth-child(2),
+.offer:nth-child(3) {
+  display: none;
+}
 
 .offers td {
   color: #000000;
@@ -344,6 +382,7 @@ svg image:hover{
 .services {
   width: 1160px;
   margin: 0 auto;
+  display: flex;
 }
 .services h3,
 .about-us h2,
@@ -354,6 +393,16 @@ svg image:hover{
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 0.21px;
+}
+.services-left-column {
+  width: 280px;
+}
+.service {
+  width: 880px;
+}
+.service:nth-child(4),
+.service:nth-child(5) {
+  display: none;
 }
 
 /* Логотипы */
@@ -449,7 +498,7 @@ svg image:hover{
 }
 .lower-menu-list a {
   color: #ffffff;
-  font-family: "Gilroy - Extra Bold", sans-serif;;
+  font-family: "Gilroy", sans-serif;;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
