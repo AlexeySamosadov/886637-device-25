@@ -161,7 +161,7 @@ svg image:hover{
   width: 1160px;
   height: 226px;
   margin: 0 auto;
-  background-image: linear-gradient( to bottom, #ffffff 17.7% , #f0c52e 17.7%);
+  background-image: linear-gradient( to bottom, #ffffff 17.7% , #f7e296 17.7%);
   padding-top: 23px;
   padding-left: 60px;
 
@@ -263,7 +263,7 @@ svg image:hover{
   padding-left: 60px;
   z-index: 10;
   display: none;
-  background-color: #f0c52e;
+  background-color: #f7e296;
 
 }
 .catalog-menu-catalog:hover ~ .catalog-menu-2,
@@ -306,24 +306,56 @@ svg image:hover{
 .container {
   width: 1440px;
   margin: 0 auto;
+
 }
 .offers {
   width: 1160px;
-  margin: 0 auto;
+  margin-left: 140px;
+  margin-bottom: 105px;
+
+  background-image: linear-gradient(to bottom, #f7e296 115px, #ffffff 115px);
+
 }
 .offers-list {
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
 .offer {
-  width: 1010px;
+  width: 1100px;
+  padding-left: 90px;
+  padding-top: 0px;
+  display: flex;
+  justify-content: flex-start;
 }
 .offer:nth-child(2),
 .offer:nth-child(3) {
   display: none;
 }
+.offer div {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-top: 85px;
+  margin-left: 125px;
+}
+.slogan {
+  width: 400px;
+  margin-bottom: 15px;
+}
+.description {
+  margin-bottom: 43px;
+}
+.button-offers {
+  width: 220px;
+  margin-bottom:  46px;
+}
+.offer-table {
 
-.offers td {
+}
+.offer-table  td {
+  width: 160px;
   color: #000000;
   font-family: "Gilroy", sans-serif;
   font-size: 36px;
@@ -331,7 +363,8 @@ svg image:hover{
   line-height: 48px;
   letter-spacing: 0.36px;
 }
-.offers th {
+.offer-table th {
+  width: 160px;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -718,6 +751,9 @@ svg image:hover{
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.18px;
+  word-break: keep-all;
+  hyphens: none;
+
                              /* Как тут можно запретить перенос по словам, чтобы соответсвовала макету? */
 
 }
