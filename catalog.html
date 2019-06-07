@@ -9,7 +9,7 @@
   </head>
   <body>
   <header class="header">
-    <a class="header-logo" href="#">
+    <a class="header-logo" href="index.html">
       <img  src="img/logo.png" alt="Device" height="35" width="163">
     </a>
     <span class="search">
@@ -67,7 +67,7 @@
         <div class="horizontal-filter">
           <span>Фильтр:</span>
           <span class="sort">СОРТИРОВКА:</span>
-          <ul class="zero-letter-spacing no-list">
+          <ul class="  zero-letter-spacing no-list">
             <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По популярности</a></li>
@@ -77,7 +77,7 @@
         </div>
 
          <div class="vertical-filter">
-           <h3>Форма</h3>
+           <h3 class="visually-hidden">Форма</h3>
            <form action="https://echo.htmlacademy.ru/" method="post">
              <fieldset>
                <legend>Стоимость</legend>
@@ -103,48 +103,50 @@
          </div>
 
 
+        <div class="main-catalog" >
+          <div class="goods">
+            <h2 class="visually-hidden">Товары</h2>
+            <ul class="no-list">
+              <li class="item">
+                <a href="#">
+                  <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                  <span class="item-name">Любительская селфи-палка</span>
+                  <span class="item-price">500 руб.</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#">
+                  <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+                  <span class="item-name">Профессиональная селфи-палка </span>
+                  <span class="item-price">1 500 руб.</span>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#">
+                  <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+                  <span class="item-name">Непотопляемая селфи-палка</span>
+                  <span class="item-price">2 500 руб.</span>
+                </a></li>
+              <li class="item">
+                <a href="#">
+                  <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+                  <span class="item-name">Селфи-палка «Следуй за мной»</span>
+                  <span class="item-price">4 900 руб.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="back-forward">
+            <ul class="no-list">
+              <li class="back"><a href="#">НАЗАД</a></li>
+              <li class="current-page"><a href="#"></a>1</li>
+              <li class="page"><a href="#"></a>2</li>
+              <li class="page"><a href="#"></a>3</li>
+              <li class="forward"><a href="#">ВПЕРЕД</a></li>
+            </ul>
+          </div>
+        </div>
 
-        <div class="goods">
-          <h2 class="hiden">Товары</h2>
-          <ul class="no-list">
-            <li class="item">
-              <a href="#">
-                <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-                <span class="item-name">Любительская селфи-палка</span>
-                <span class="item-price">500 руб.</span>
-              </a>
-            </li>
-            <li class="item">
-              <a href="#">
-                <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-                <span class="item-name">Профессиональная селфи-палка </span>
-                <span class="item-price">1 500 руб.</span>
-              </a>
-            </li>
-            <li class="item">
-              <a href="#">
-                <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-                <span class="item-name">Непотопляемая селфи-палка</span>
-                <span class="item-price">2 500 руб.</span>
-              </a></li>
-            <li class="item">
-              <a href="#">
-                <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
-                <span class="item-name">Селфи-палка «Следуй за мной»</span>
-                <span class="item-price">4 900 руб.</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="back-forward">
-          <ul class="no-list">
-            <li class="back"><a href="#">НАЗАД</a></li>
-            <li class="current-page"><a href="#"></a>1</li>
-            <li class="page"><a href="#"></a>2</li>
-            <li class="page"><a href="#"></a>3</li>
-            <li class="forward"><a href="#">ВПЕРЕД</a></li>
-          </ul>
-        </div>
       </section>
 
     </main>
