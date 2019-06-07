@@ -396,8 +396,15 @@ svg image:hover{
 }
 .landing-catalog-list {
   display: flex;
+  justify-content: space-between;
+}
+.landing-catalog-list li {
+  display: flex;
+  flex-direction: column;
 }
 .landing-catalog a {
+
+
   font-family: "Gilroy", sans-serif;
 
   background-color: rgba(240, 197, 46, 0.5);
@@ -413,6 +420,9 @@ svg image:hover{
 }
 .landing-catalog a:active img {
   opacity: 0.3;
+}
+.landing-catalog img {
+
 }
 
 
@@ -751,8 +761,8 @@ svg image:hover{
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.18px;
-  word-break: keep-all;
-  hyphens: none;
+
+  white-space: pre-wrap;
 
                              /* Как тут можно запретить перенос по словам, чтобы соответсвовала макету? */
 
