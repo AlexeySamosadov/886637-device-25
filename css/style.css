@@ -146,6 +146,7 @@ svg image:hover{
   text-align: left;
 
   background-color: #000000;
+
 }
 .button-about-us,
 .button-contacts {
@@ -260,6 +261,7 @@ svg image:hover{
   left: -60px;
   justify-content: flex-start;
   width: 1160px;
+  padding-bottom: 53px;
   padding-left: 60px;
   z-index: 10;
   display: none;
@@ -306,7 +308,6 @@ svg image:hover{
 .container {
   width: 1440px;
   margin: 0 auto;
-
 }
 .offers {
   width: 1160px;
@@ -314,7 +315,6 @@ svg image:hover{
   margin-bottom: 105px;
 
   background-image: linear-gradient(to bottom, #f7e296 115px, #ffffff 115px);
-
 }
 .offers-list {
   margin: 0;
@@ -393,6 +393,7 @@ svg image:hover{
 .landing-catalog {
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 84px;
 }
 .landing-catalog-list {
   display: flex;
@@ -401,21 +402,42 @@ svg image:hover{
 .landing-catalog-list li {
   display: flex;
   flex-direction: column;
+  width: 160px;
+
 }
 .landing-catalog a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 160px;
+  height: 240px;
+
 
 
   font-family: "Gilroy", sans-serif;
-
-  background-color: rgba(240, 197, 46, 0.5);
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.18px;
+
+  background-image: linear-gradient(to bottom, rgba(240, 197, 46, 0.5) 160px, #ffffff 160px);
 }
-.landing-catalog a:hover,
+.landing-catalog span {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-catalog-selfi {
+  align-self: flex-end;
+}
+.landing-catalog a:hover ,
 .landing-catalog a:focus {
-  background-color: rgba(240, 197, 46, 1);
+  background-image: linear-gradient(to bottom, #f0c52e 160px, #ffffff 160px);
   opacity: 1;
 }
 .landing-catalog a:active img {
@@ -428,9 +450,15 @@ svg image:hover{
 
 /* Cервисы */
 .services {
-  width: 1160px;
+  width: 1440px;
   margin: 0 auto;
   display: flex;
+  height: 388px;
+  margin-bottom: 94px;
+
+  background-image: linear-gradient(to bottom, #ffffff 100px, #e5e5e5 100px);
+
+
 }
 .services h3,
 .about-us h2,
@@ -443,10 +471,15 @@ svg image:hover{
   letter-spacing: 0.21px;
 }
 .services-left-column {
-  width: 280px;
+  width: 420px;
+  margin-top: 67px;
+  padding-left: 140px;
+
 }
 .service {
-  width: 880px;
+  width: 450px;
+  margin-top: 25px;
+  margin-left: 116px;
 }
 .service:nth-child(4),
 .service:nth-child(5) {
@@ -457,6 +490,9 @@ svg image:hover{
 .logotypes {
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 93px;
+
+
 }
 .logotypes a {
   filter: grayscale(100%);
@@ -469,17 +505,23 @@ svg image:hover{
 }
 .logotypes-list {
   display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
 }
 
 /* О нас */
 .container-bottom {
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 90px;
+  padding-top: 15px;
   display: flex;
+  justify-content: space-between;
 }
 .about-us,
 .contacts {
-  width: 500px;
+  width: 488px;
   border: 1px solir red;
 }
 .about-us p {
@@ -490,6 +532,9 @@ svg image:hover{
   color: #000000;
   font-family: "Gilroy", sans-serif;
   font-weight: 400;
+}
+.contacts {
+  width: 561px;
 }
 
 
