@@ -679,15 +679,22 @@ svg image:hover{
 }
 .upper-menu-list {
   display: flex;
-  width: 330px;
-  justify-content: space-between;
+  width: 450px;
+  justify-content: flex-end;
   align-items: flex-start;
 }
 .upper-menu-list li {
   padding-left: 30px;
+  margin-left: 35px;
+
 }
 .footer-user {
   position: relative;
+}
+.footer-user-exit {
+  opacity: 0.3;
+  padding: 0;
+  margin-left: -100px;   /*Временно потом перераспределить justify content когда буду добавлять иконки*/
 }
 .footer-user::before {
   position: absolute;
