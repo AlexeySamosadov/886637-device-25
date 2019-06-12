@@ -3,9 +3,8 @@
   <head>
       <meta charset="UTF-8">
       <title>Каталог товаров</title>
-      <link href="css/fonts.css" rel="stylesheet" type="text/css">
-      <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet" type="text/css">
+      <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
   <header class="header">
@@ -71,20 +70,20 @@
             <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По популярности</a></li>
-            <li><a href="#">С начала</a></li>
-            <li><a href="#">С конца</a></li>
+            <li><a class="sort-start" href="#" aria-label="С начала"></a></li>
+            <li><a class="sort-end" href="#" aria-label="С конца"></a></li>
           </ul>
         </div>
 
          <div class="vertical-filter">
            <h3 class="visually-hidden">Форма</h3>
            <form action="https://echo.htmlacademy.ru/" method="post">
-             <fieldset>
+             <fieldset class="filter-price">
                <legend>Стоимость</legend>
                <input type="text">
                <input type="text">
              </fieldset>
-             <fieldset>
+             <fieldset class="filter-color">
                <legend>Цвет</legend>
                <input type="checkbox" id="black" checked><label for="black">Черный</label>
                <input type="checkbox" id="white"><label for="white" >Белый</label>
@@ -92,7 +91,7 @@
                <input type="checkbox" id="red"><label for="red">Красный</label>
                <input type="checkbox" id="pink" checked><label for="pink">Розовый</label>
              </fieldset>
-             <fieldset>
+             <fieldset class="filter-bluetooth">
                <legend>Bluetooth</legend>
                <input type="radio" id="yes" name="bluetoth" value="yes"><label for="yes">Есть</label>
                <input type="radio" id="no" name="bluetoth" value="no"><label for="no">Нет</label>
@@ -155,7 +154,7 @@
         <h2 class="visually-hidden">Верхнее меню</h2>
         <a href="#"><img  class="footer-logo" src="img/footer-logo.png" alt="Device" width="163" height="35"></a>
         <ul class="upper-menu-list no-list">
-          <li class="footer-user user-name"><a href="#">Валентин Петухов</a></li>
+          <li class="footer-user footer-user-name"><a href="#">Валентин Петухов</a></li>
           <li class="footer-user-exit"><a href="#">Выйти</a></li>
           <li class="footer-compare"><a href="#">Сравнить</a></li>
           <li class="footer-cart"><a href="#">Корзина</a></li>

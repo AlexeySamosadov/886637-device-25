@@ -102,7 +102,7 @@ svg image:hover{
   background-color: transparent;
   border: none;
 
-
+  z-index: 1;
 
 }
 .button:before {
@@ -141,12 +141,15 @@ svg image:hover{
 }
 .button-services:active {
   width: 278px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 35px;
 
   color: #f7e184;
   text-align: left;
 
   background-color: #000000;
-
+  z-index: 111;     /*  Здесь когда я добавил классу z-index: 1 и он вылез из бод фонавсе стало нормально, кроме этого момента, тут он почемуто не перекрашивается в черный цвет  */
 }
 .button-about-us,
 .button-contacts {
@@ -366,6 +369,7 @@ svg image:hover{
   margin: 0 auto;
 }
 .offers {
+  position: relative;
   width: 1160px;
   margin-left: 140px;
   margin-bottom: 105px;
@@ -376,15 +380,44 @@ svg image:hover{
   margin: 0;
   padding: 0;
   display: flex;
+  position: relative;
+}
+.offers input {
+
+}
+.offer-radio {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 70px;
+  top: 340px;
+  width: 80px;
+  height: 15px;
+}
+
+.offer-radio label {   /* почему то не работает при нажатии на лейбл хотя отображает именения  */
+  height: 12px;
+  width: 12px;
+  background-image: url("../img/svg/slider-button-empty.svg");
+  background-position: center;
+  background-size: 12px 12px;
+
+}
+
+#slide-1:checked ~ .offers-list .offer-radio label[for="slide-1"],
+#slide-2:checked ~ .offers-list .offer-radio label[for="slide-2"],
+#slide-3:checked ~ .offers-list .offer-radio label[for="slide-3"] {
+  background-image: url("../img/svg/slider-button.svg")
 }
 
 .offer {
   position: relative;
   width: 1100px;
-  padding-left: 90px;
+
   padding-top: 0px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 .offer::before {
   position: absolute;
@@ -396,23 +429,45 @@ svg image:hover{
 }
 .offer::after {
   position: absolute;
-  top: -10px;
+  top: -40px;
   right: 0px;
   width: 166px;
   height: 131px;
-  content: "01";
   color: #ffffff;
   font-family: "Gilroy";
   font-size: 179px;
   font-weight: 400;
   line-height: 179.2px;
   letter-spacing: 0.36px;
-
 }
-.offer:nth-child(2),
-.offer:nth-child(3) {
+.slide-1::after {
+  content: "01";
+}
+.slide-2::after {
+  content: "02";
+}
+.slide-3::after {
+  content: "03";
+}
+.slide-2,
+.slide-3 {
   display: none;
 }
+
+#slide-1:checked ~ .offers-list .slide-1,
+#slide-2:checked ~ .offers-list .slide-2,
+#slide-3:checked ~ .offers-list .slide-3{
+  display: flex;
+}
+#slide-1:checked ~  .offers-list .slide-2,
+#slide-1:checked ~  .offers-list .slide-3,
+#slide-2:checked ~  .offers-list .slide-1,
+#slide-2:checked ~  .offers-list .slide-3,
+#slide-3:checked ~  .offers-list .slide-1,
+#slide-3:checked ~  .offers-list .slide-2 {
+  display: none;
+}
+
 .offer div {
   display: flex;
   flex-direction: column;
@@ -420,12 +475,20 @@ svg image:hover{
   margin-top: 85px;
   margin-left: 125px;
 }
+.slide-3 div {
+  margin-left: 45px;
+}
+.slide-3 img {
+  width: 525px;
+  height: 334px;
+  margin-top: 40px;
+}
 .slogan {
-  width: 400px;
+  min-width: 400px;
   margin-bottom: 15px;
 
   white-space: pre-wrap;
-
+  z-index: 10;
 }
 .description {
   margin-bottom: 43px;
@@ -540,8 +603,9 @@ svg image:hover{
   margin-bottom: 94px;
 
   background-image: linear-gradient(to bottom, #ffffff 100px, #e5e5e5 100px);
-
-
+}
+.services input {
+ /** display: none; **/
 }
 .services h3,
 .about-us h2,
@@ -574,8 +638,21 @@ svg image:hover{
   margin-top: 25px;
   margin-left: 116px;
 }
-.service:nth-child(4),
-.service:nth-child(5) {
+.service-warranty,
+.service-credit {
+  display: none;
+}
+#delivery:checked ~ .service-delivery,
+#warranty:checked ~ .service-warranty,
+#credit:checked ~ .service-credit {
+  display: block;
+}
+#delivery:checked ~  .service-warranty,
+#delivery:checked ~  .service-credit,
+#warranty:checked ~  .service-delivery,
+#warranty:checked ~  .service-credit,
+#credit:checked ~  .service-delivery,
+#credit:checked ~  .service-warranty {
   display: none;
 }
 
@@ -678,23 +755,27 @@ svg image:hover{
   align-items: center;
 }
 .upper-menu-list {
+  padding: 0;
+  margin: 0;
   display: flex;
-  width: 450px;
-  justify-content: flex-end;
+  min-width: 250px;
+  justify-content: flex-start;
   align-items: flex-start;
+
 }
 .upper-menu-list li {
   padding-left: 30px;
-  margin-left: 35px;
-
 }
 .footer-user {
   position: relative;
+  min-width: 50px;
+  margin-right: 20px;
+
 }
-.footer-user-exit {
+.upper-menu-list .footer-user-exit {
   opacity: 0.3;
-  padding: 0;
-  margin-left: -100px;   /*Временно потом перераспределить justify content когда буду добавлять иконки*/
+  padding:0;
+  margin-right: 40px;
 }
 .footer-user::before {
   position: absolute;
@@ -850,6 +931,7 @@ svg image:hover{
   letter-spacing: 0.17px;
   width: 1160px;
   margin: 0 auto;
+  margin-top: 40px;
   padding-left: 60px;
 
 }
@@ -858,10 +940,27 @@ svg image:hover{
   margin: 0 auto;
 }
 .breadcrumbs ul {
-  width: 400px;
+  min-width: 400px;
   margin-left: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+.breadcrumbs li {
+  position: relative;
+  margin-right: 36px;
+}
+.breadcrumbs li::after {
+  position: absolute;
+  content: "";
+  right: -20px;
+  top: 13px;
+  width: 4px;
+  height: 7px;
+
+  background-image: url("../img/svg/nav-arrow.svg");
+}
+.breadcrumbs li:last-child::after {
+  display: none;
 }
 .breadcrumbs a {
   color: #000000;
@@ -910,11 +1009,36 @@ svg image:hover{
   justify-content: center;
   padding-left: 10px;
 }
+.sort-start,
+.sort-end {
+  display: block;
+  width: 11px;
+  height: 10px;
+}
+.sort-start {
+
+  background-image: url("../img/svg/icon-up-dir.svg");
+
+}
+.sort-end {
+  background-image: url("../img/svg/icon-down-dir.svg");
+}
 .horizontal-filter ul {
   display: flex;
   width: 600px;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 20px  ;
+}
+.horizontal-filter li {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.horizontal-filter li:nth-child(4){
+  margin-left: auto;
+}
+.horizontal-filter li:last-child {
+  margin-right: 0;
 }
 .horizontal-filter a {
   opacity: 0.3;
@@ -925,9 +1049,14 @@ svg image:hover{
   font-weight: 400;
   line-height: 18px;
 }
+.horizontal-filter a:focus,
+.horizontal-filter a:active,
+.horizontal-filter a:hover {
+  opacity: 1;
+}
 .vertical-filter {
   width: 470px;
-  padding-left: 200px;
+  padding-left: 87px;
   padding-top: 50px;
   display: flex;
   justify-content: center;
@@ -937,9 +1066,19 @@ svg image:hover{
 .vertical-filter fieldset {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   border: none;
 }
+.vertical-filter fieldset:before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  width: 201px;
+  height: 2px;
+  background-color: #000000;
+}
+
 .vertical-filter legend {
   color: #000000;
   font-family: "Gilroy", sans-serif;
@@ -949,6 +1088,7 @@ svg image:hover{
   letter-spacing: 0.18px;
                               /* Убрать обводку  */
 }
+
 .vertical-filter label {
   color: #000000;
   font-family: "Open Sans", sans-serif;
@@ -961,7 +1101,43 @@ svg image:hover{
 .vertical-filter input {
   display: none;
 }
-
+.vertical-filter label {
+  position: relative;
+}
+.filter-color label::before {
+  position: absolute;
+  left: 0px;
+  top: 7px;
+  content: "";
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/svg/checkbox-off.svg");
+  background-position: center;
+  background-repeat: no-repeat ;
+}
+ #black:checked ~ label[for="black"]::before,
+ #white:checked ~ label[for="white"]::before,
+ #blue:checked  ~ label[for="blue"]::before,
+ #red:checked   ~ label[for="red"]::before,
+ #pink:checked  ~ label[for="pink"]::before {
+  background-image: url("../img/svg/checkbox-on.svg");
+  background-position: 2px 0;
+}
+.filter-bluetooth label::before {
+  position: absolute;
+  left: 0px;
+  top: 7px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/svg/radio-off.svg");
+  background-position: center;
+  background-repeat: no-repeat ;
+}
+#yes:checked ~ label[for="yes"]::before,
+#no:checked ~ label[for="no"]::before {
+  background-image: url("../img/svg/radio-on.svg");
+}
 
 /* Сами товары */
 .main-catalog {

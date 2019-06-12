@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="css/fonts.css" rel="stylesheet" type="text/css" />
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="header">
@@ -53,11 +52,19 @@
     <main class="container">
       <section class="offers">
         <h2 class="visually-hidden">Спецпредложения</h2>
+        <input type="radio" id="slide-1">   <!-- всключаются две радио одновременноо, как это можно бурать? -->
+        <input type="radio" id="slide-2">
+        <input type="radio" id="slide-3">
         <ul class="offers-list no-list">
-          <li class="offer">
+          <div class="offer-radio">
+            <label for="slide-1"></label>      <!-- почемуто односторонняя связь при изменении input label меняется, но наоборот при нажатии на label на input не действует -->
+            <label for="slide-2"></label>
+            <label for="slide-3"></label>
+          </div>
+          <li class="offer slide-1">
             <img src="img/slider-1.png" alt="Самая длинная палка для селфи палка" width="384" height="486">
             <div>
-              <span class="slogan">Делай селфи,   как Бен Стиллер!</span>
+              <span class="slogan">Делай селфи,             как Бен Стиллер!</span>
               <p class="description">Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <a class="button button-offers"><span>Подробнее</span></a>
@@ -67,27 +74,31 @@
               </table>
             </div>
           </li>
-          <li class="offer">
-            <span class="slogan">Худеем правильно!</span>
-            <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы
-              не пропускать занятия и соблюдать диету.</p>
-            <span class="button button-offers"><a>Подробнее</a></span>
-            <table>
-              <tr><td>48 часов</td></tr>
-              <tr><th>Без подзарядки</th></tr>
-            </table>
+          <li class="offer slide-2">
             <img src="img/slider-2.png" alt="Фитнес-браслеты" width="384" height="486">
+            <div>
+              <span class="slogan">Худеем                правильно!</span>
+              <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы
+                не пропускать занятия и соблюдать диету.</p>
+              <a class="button button-offers"><span>Подробнее</span></a>
+              <table class="offer-table">
+                <tr><td>48 часов</td></tr>
+                <tr><th>Без подзарядки</th></tr>
+              </table>
+            </div>
           </li>
-          <li class="offer">
-            <span class="slogan">Порхает как бабочка, жалит как пчела!</span>
-            <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен
-              мощным лазером, замаскированным под стандартную камеру.</p>
-            <a class="button button-offers"><span>Подробнее</span></a>
-            <table>
-              <tr><td>800 м</td><td>50 м</td></tr>
-              <tr><th>Дальность полета</th><th>Радиус поражения</th></tr>
-            </table>
+          <li class="offer slide-3">
             <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
+            <div>
+              <span class="slogan">Порхает как бабочка, жалит как пчела!</span>
+              <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен
+                мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="button button-offers"><span>Подробнее</span></a>
+              <table class="offer-table">
+                <tr><td>800 м</td><td>50 м</td></tr>
+                <tr><th>Дальность полета</th><th>Радиус поражения</th></tr>
+              </table>
+            </div>
           </li>
         </ul>
       </section>
@@ -108,28 +119,29 @@
         <h2 class="visually-hidden">Сервисы</h2>
         <div class="services-left-column">
           <ul class="no-list">
-            <li><label class="button button-services">Доставка</label></li>
-            <li><label class="button button-services">Гарантия</label></li>
-            <li><label class="button button-services">Кредит</label></li>
+            <li><label class="button button-services" for="delivery">Доставка</label></li>
+            <li><label class="button button-services" for="warranty">Гарантия</label></li>
+            <li><label class="button button-services" for="credit">Кредит</label></li>
           </ul>
         </div>
-
-          <div class="service">
-            <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </div>
-          <div class="service">
-            <h3>Гарантия</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.</p>
-          </div>
-          <div class="service">
-            <h3>Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-              условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </div>
-
+        <input type="radio" id="delivery">
+        <input type="radio" id="warranty">   <!-- работают, но включаются две одновременно, что странно для радио, из за этого при двух включенный обе выключают отоброажения друг друга -->
+        <input type="radio" id="credit">
+        <div class="service service-delivery">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+        <div class="service service-warranty">
+          <h3>Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+            Товар, не дом, конечно же.</p>
+        </div>
+        <div class="service service-credit">
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+            условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </div>
       </section>
       <section class="logotypes">
         <h2 class="visually-hidden">Логотипы</h2>
