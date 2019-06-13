@@ -70,13 +70,23 @@ img {
 
 /* Класс визуально скрывающий элементы */
 .visually-hidden {
-  display: none; /* Пока так потом скрою для читалок правильно*/
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 /* Класс обнуляющий стили списка*/
 .no-list {
   list-style: none;
-  padding: 0;   /* Вот где была проблема с отступами где я спрашивал) */
+  padding: 0;
 }
 /* Класс для SVG*/
 svg image {
@@ -114,7 +124,7 @@ svg image:hover{
 
   height: 8px;
   width: 100%;
-  transition: height 300ms, transform 270ms ;
+  transition: height 300ms, transform 270ms, width 300ms ;
 
 
   background-color: #f0c52e ;
@@ -141,6 +151,9 @@ svg image:hover{
   transition: all 0.3s ease-out;
 }
 .button-services:active {
+  color: #f7e184;
+}
+.button-services:active::before {
   width: 278px;
   display: flex;
   justify-content: flex-start;
@@ -150,7 +163,7 @@ svg image:hover{
   text-align: left;
 
   background-color: #000000;
-  z-index: 111;     /*  Здесь когда я добавил классу z-index: 1 и он вылез из бод фонавсе стало нормально, кроме этого момента, тут он почемуто не перекрашивается в черный цвет  */
+  z-index: -1;
 }
 .button-about-us,
 .button-contacts {
