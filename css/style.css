@@ -605,7 +605,7 @@ svg image:hover{
   background-image: linear-gradient(to bottom, #ffffff 100px, #e5e5e5 100px);
 }
 .services input {
- /** display: none; **/
+  display: none;
 }
 .services h3,
 .about-us h2,

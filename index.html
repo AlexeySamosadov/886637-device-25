@@ -52,9 +52,9 @@
     <main class="container">
       <section class="offers">
         <h2 class="visually-hidden">Спецпредложения</h2>
-        <input type="radio" id="slide-1">   <!-- всключаются две радио одновременноо, как это можно бурать? -->
-        <input type="radio" id="slide-2">
-        <input type="radio" id="slide-3">
+        <input type="radio" id="slide-1" name="slide">
+        <input type="radio" id="slide-2" name="slide">
+        <input type="radio" id="slide-3" name="slide">
         <ul class="offers-list no-list">
           <div class="offer-radio">
             <label for="slide-1"></label>      <!-- почемуто односторонняя связь при изменении input label меняется, но наоборот при нажатии на label на input не действует -->
@@ -124,9 +124,9 @@
             <li><label class="button button-services" for="credit">Кредит</label></li>
           </ul>
         </div>
-        <input type="radio" id="delivery">
-        <input type="radio" id="warranty">   <!-- работают, но включаются две одновременно, что странно для радио, из за этого при двух включенный обе выключают отоброажения друг друга -->
-        <input type="radio" id="credit">
+        <input type="radio" id="delivery" name="service">
+        <input type="radio" id="warranty" name="service">
+        <input type="radio" id="credit" name="service">
         <div class="service service-delivery">
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
