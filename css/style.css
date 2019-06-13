@@ -138,6 +138,7 @@ svg image:hover{
 }
 .button-services {
   width: 160px;
+  transition: all 0.3s ease-out;
 }
 .button-services:active {
   width: 278px;
