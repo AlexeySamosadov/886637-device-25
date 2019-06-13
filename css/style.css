@@ -632,12 +632,34 @@ svg image:hover{
   height: 319px;
   background-color: #000000;
   content: "";
-
 }
 .service {
+  position: relative;
   width: 450px;
   margin-top: 25px;
   margin-left: 116px;
+}
+.service::before {
+  position: absolute;
+  top: 30px;
+  right: -260px;
+  content: "";
+}
+.service-delivery::before {
+  top: 60px;
+  width: 136px;
+  height: 164px;
+  background-image: url("../img/svg/delivery.svg");
+}
+.service-warranty::before {
+  width: 171px;
+  height: 194px;
+  background-image: url("../img/svg/warranty.svg");
+}
+.service-credit::before {
+  width: 156px;
+  height: 186px;
+  background-image: url("../img/svg/credit.svg");
 }
 .service-warranty,
 .service-credit {
