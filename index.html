@@ -13,7 +13,9 @@
       </a>
       <span class="search">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input type="search" name="Поиск по сайту" placeholder=" Поиск по сайту">
+            <label class="search-icon" for="search"></label>
+            <input type="search" name="Поиск по сайту" placeholder=" Поиск по сайту" id="search">
+            <button class="search-button" type="submit">Найти</button>
           </form>
       </span>
       <ul class="header-upper-menu no-list">
@@ -117,6 +119,9 @@
 
       <section class="services">
         <h2 class="visually-hidden">Сервисы</h2>
+        <input type="radio" id="delivery" name="service" checked>
+        <input type="radio" id="warranty" name="service">
+        <input type="radio" id="credit" name="service">
         <div class="services-left-column">
           <ul class="no-list">
             <li><label class="button button-services" for="delivery">Доставка</label></li>
@@ -124,9 +129,6 @@
             <li><label class="button button-services" for="credit">Кредит</label></li>
           </ul>
         </div>
-        <input type="radio" id="delivery" name="service" checked>
-        <input type="radio" id="warranty" name="service">
-        <input type="radio" id="credit" name="service">
         <div class="service service-delivery">
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
@@ -223,22 +225,56 @@
       </section>
     </footer>
 
-    <section class="write-us">
+    <section class="modal write-us">
       <form action="https://echo.htmlacademy.ru/" method="get">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" name="name" placeholder="Имя Фамилия">
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" id="email" name="email" placeholder="email@example.com">
-        <label for="text">Текс письма</label>
-        <textarea id="text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <div class="write-us-name">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="write-us-email">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" id="email" name="email" placeholder="email@example.com">
+        </div>
+        <div class="write-us-textarea">
+          <label for="text">Текс письма</label>
+          <textarea id="text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </div>
+
         <button class="button" type="submit">Отправить</button>
-        <button class="button" type="button" class="modal-close">Закрыть</button>
+        <button  class="close write-us-close" type="button" class="modal-close" aria-label="Закрыть"></button>
       </form>
     </section>
-  
-    <section class="big-map">
+
+    <section class="modal big-map">
       <img src="img/map-big.jpg" alt="Ул. Строителей, 15">
       <button type="button" class="modal-close">Закрыть</button>
     </section>
   </body>
+
+<!--
+  <section class="modal write-us">
+    <form action="">
+      <div class="write-us-name">
+        <label>
+          Ваше имя:
+          <input type="text" placeholder="Ваше имя:" required>
+        </label>
+      </div>
+      <div class="write-us-email">
+        <label>
+          Ваш email:
+          <input type="email" placeholder="Ваш email:" required>
+        </label>
+      </div>
+      <div>
+        <label for="">
+          Текст письма:
+          <textarea name="" id="" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </label>
+      </div>
+      <button class="button">Отправить</button>
+    </form>
+  </section>
+-->
+
 </html>

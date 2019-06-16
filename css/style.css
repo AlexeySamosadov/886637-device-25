@@ -124,7 +124,7 @@ svg image:hover{
 
   height: 8px;
   width: 100%;
-  transition: height 300ms, transform 270ms, width 300ms ;
+  transition: all 300ms;
 
 
   background-color: #f0c52e ;
@@ -155,13 +155,8 @@ svg image:hover{
 }
 .button-services:active::before {
   width: 278px;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 35px;
 
   color: #f7e184;
-  text-align: left;
-
   background-color: #000000;
   z-index: -1;
 }
@@ -169,6 +164,10 @@ svg image:hover{
 .button-contacts {
   width: 260px;
 }
+.button-carts {
+  width: 200px;
+}
+
 
 /* Хеадер  */
 .header {
@@ -202,6 +201,8 @@ svg image:hover{
   margin-left: 33px;
 }
  .search input {
+  max-width: 190px;
+
   color: #000000;
   opacity: 0.3;
   background-color: transparent;
@@ -213,27 +214,74 @@ svg image:hover{
 .search input:focus {
   opacity: 1;
 }
-.search::before {
+
+.search-button {
+  display: none;
+  position: absolute;
+  top: -9px;
+  right: -215px;
+
+  width: 85px;
+  height: 49px;
+  margin-left: 126px;
+  border: 2px solid #000000;
+
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+
+  background-color: #f7e296;
+}
+.search input:focus ~ .search-button {
+  display: block;
+}
+.search-button:hover {
+  display: block;
+  color: #ffffff;
+  background-color: #000000;
+}
+.search-button:focus {
+  display: block;
+  color: #ffffff;
+  background-color: #000000;
+  background-color: #000000;
+  opacity: 0.3;
+}
+.search-button::before {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  right: 0;
+  width: 441px;
+  height: 2px;
+  background-color: #000000;
+}
+
+
+.search-icon {
   position: absolute;
   content: "";
   height: 16px;
   width: 16px;
   background-image: url("../img/svg/search.svg");
   top: 8px;
-  left: -30px;
+  left: -32px;
 }
 .header-upper-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 15px;
   margin-right: 60px;
-  width: 500px;
+  min-width: 500px;
 }
 .header-upper-menu li{
   padding-left: 30px;
 }
 .user {
   position: relative;
+  margin-right: auto;
 }
 .user::before {
   position: absolute;
@@ -244,12 +292,11 @@ svg image:hover{
   height: 12px;
   background-image: url("../img/svg/user.svg");
 }
-.user-name {
-  margin-right: 15px;
-}
+
 .user-exit {
   opacity: 0.3;
-  margin-left: -50px;   /*Временно потом перераспределить justify content когда буду добавлять иконки*/
+  padding-left: 15px;
+  /*Временно потом перераспределить justify content когда буду добавлять иконки*/
 }
 .compare {
   position: relative;
@@ -265,6 +312,7 @@ svg image:hover{
 }
 .cart {
   position: relative;
+  margin-left: 35px;
 }
 .cart::before {
   position: absolute;
@@ -334,7 +382,7 @@ svg image:hover{
   left: -60px;
   justify-content: flex-start;
   width: 1160px;
-  padding-bottom: 53px;
+  padding-bottom: 55px;
   padding-left: 60px;
   z-index: 10;
   display: none;
@@ -397,7 +445,7 @@ svg image:hover{
   position: relative;
 }
 .offers input {
-
+  display: none;
 }
 .offer-radio {
   position: absolute;
@@ -408,9 +456,11 @@ svg image:hover{
   top: 340px;
   width: 80px;
   height: 15px;
+
+  z-index: 2;
 }
 
-.offer-radio label {   /* почему то не работает при нажатии на лейбл хотя отображает именения  */
+.offer-radio label {
   height: 12px;
   width: 12px;
   background-image: url("../img/svg/slider-button-empty.svg");
@@ -509,7 +559,7 @@ svg image:hover{
 }
 .button-offers {
   width: 220px;
-  margin-bottom:  46px;
+  margin-bottom: 46px;
 }
 .offer-table {
 
@@ -692,6 +742,26 @@ svg image:hover{
   display: none;
 }
 
+#delivery:checked ~ .services-left-column label[for="delivery"],
+#warranty:checked ~ .services-left-column label[for="warranty"],
+#credit:checked ~ .services-left-column label[for="credit"] {
+  color: #f7e184;
+}
+
+
+#delivery:checked ~ .services-left-column label[for="delivery"]::before,
+#warranty:checked ~ .services-left-column label[for="warranty"]::before,
+#credit:checked ~ .services-left-column label[for="credit"]::before {
+  width: 278px;
+  background-color: #000000;
+  z-index: -1;
+  height: 40px;
+  transform: translateY(-40%);
+}
+
+
+
+ */
 /* Логотипы */
 .logotypes {
   width: 1160px;
@@ -874,6 +944,9 @@ svg image:hover{
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.6px;
+}
+.footer-lower-menu address {
+  font-style: normal;
 }
 .footer-lower-menu address,
 .footer-lower-menu > a {
@@ -1090,6 +1163,9 @@ svg image:hover{
 .horizontal-filter a:hover {
   opacity: 1;
 }
+.horizontal-filter .sort-active {
+  opacity: 1;
+}
 .vertical-filter {
   width: 470px;
   padding-left: 87px;
@@ -1191,8 +1267,7 @@ svg image:hover{
   justify-content: space-between;
 }
 .item {
-
-
+position: relative;
 }
 .item a {
   display: flex;
@@ -1233,8 +1308,38 @@ svg image:hover{
   line-height: 24px;
   letter-spacing: 0.16px;
 }
+
+
+.item a:focus ~ .item-carts,
+.item a:active ~ .item-carts {
+  display: flex;
+}
+
+.item-carts {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  top: 218px;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 1;
+}
+.item-carts > span {
+  margin-top: 10px;
+  opacity: 0.5;
+}
+.item-carts > span:hover {
+  opacity: 1;
+}
+.item-carts > span:focus {
+  opacity: 0.2;
+}
+
+
 .back-forward {
-  padding: 0 30px;
+
   margin-top: 20px;
   height: 70px;
   background-color: #ebebeb;
@@ -1242,14 +1347,16 @@ svg image:hover{
   align-items: center;
 }
 .back-forward ul {
+  padding: 0;
+  margin: 0;
+  height: 70px;
+  margin: 0;
   width: 760px;
   display: flex;
   justify-content: center;
-  margin: 0;
+
 }
 .back-forward li {
-  padding: 15px 0px;
-
   color: #000000;
   font-family: "Gilroy", sans-serif;
   font-size: 16px;
@@ -1257,9 +1364,13 @@ svg image:hover{
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.91px;
+  display: flex;
+  align-items: center;
 }
 .back-forward a {
-  padding: 15px;
+  display:  block;
+  padding: 23px 15px;
+
 }
 .back-forward li:first-child {
   margin-right: auto;
@@ -1267,14 +1378,64 @@ svg image:hover{
 .back-forward li:last-child {
   margin-left: auto;
 }
+.back-forward li:first-child a,
+.back-forward li:last-child a {
+  padding: 0 30px;
+}
+
+.back-forward li:first-child:hover,
+.back-forward li:last-child:hover {
+  background-color: #d8d8d8;
+}
+
 .page,
 .page {
   opacity: 0.3;
 }
 /* Модальные окна */
-
-.write-us,
-.big-map
-{
+.modal {
   display: none;
+}
+
+.write-us {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  width: 960px;
+  height: 553px;
+  margin-left: -430px;
+  padding: 70px 100px;
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  background-color: #ffffff;
+
+
+  z-index:  100;
+}
+.modal form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.write-us-name,
+.write-us-email {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.write-us-textarea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.write-us-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 55px;
+  height: 55px;
+
+  background-color: #f7e296;
+  border-radius: 50%;
+  box-shadow: none;
 }

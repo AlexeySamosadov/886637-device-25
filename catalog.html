@@ -13,12 +13,16 @@
     </a>
     <span class="search">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input type="search" name="Поиск по сайту" placeholder=" Поиск по сайту">
+            <label class="search-icon" for="search"></label>
+            <input type="search" name="Поиск по сайту" placeholder=" Поиск по сайту" id="search">
+            <button class="search-button" type="submit">Найти</button>
           </form>
       </span>
     <ul class="header-upper-menu no-list">
-      <li class="user user-name"><a href="#">Валентин Петухов</a></li>
-      <li class="user-exit"><a href="#">Выйти</a></li>
+      <li class="user user-name">
+        <a href="#">Валентин Петухов</a>
+        <a class="user-exit" href="#">Выйти</a>
+      </li>
       <li class="compare"><a href="#">Сравнить</a></li>
       <li class="cart"><a href="#">Корзина</a></li>
     </ul>
@@ -67,11 +71,11 @@
           <span>Фильтр:</span>
           <span class="sort">СОРТИРОВКА:</span>
           <ul class="  zero-letter-spacing no-list">
-            <li><a href="#">По цене</a></li>
+            <li><a href="#" class="sort-active">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По популярности</a></li>
             <li><a class="sort-start" href="#" aria-label="С начала"></a></li>
-            <li><a class="sort-end" href="#" aria-label="С конца"></a></li>
+            <li><a class="sort-end sort-active" href="#" aria-label="С конца"></a></li>
           </ul>
         </div>
 
@@ -93,7 +97,7 @@
              </fieldset>
              <fieldset class="filter-bluetooth">
                <legend>Bluetooth</legend>
-               <input type="radio" id="yes" name="bluetoth" value="yes"><label for="yes">Есть</label>
+               <input type="radio" id="yes" name="bluetoth" value="yes" checked><label for="yes">Есть</label>
                <input type="radio" id="no" name="bluetoth" value="no"><label for="no">Нет</label>
              </fieldset>
              <button class="button" type="submit">Показать</button>
@@ -112,6 +116,10 @@
                   <span class="item-name">Любительская селфи-палка</span>
                   <span class="item-price">500 руб.</span>
                 </a>
+                <div class="item-carts">
+                  <button href="#" class="button button-carts"><span>В корзину</span></button>
+                  <span href="#">Добавить  к сравнению</span>
+                </div>
               </li>
               <li class="item">
                 <a href="#">
@@ -119,19 +127,32 @@
                   <span class="item-name">Профессиональная         селфи-палка </span>
                   <span class="item-price">1 500 руб.</span>
                 </a>
+                <div class="item-carts">
+                  <button href="#" class="button button-carts"><span>В корзину</span></button>
+                  <span>Добавить  к сравнению</span>
+                </div>
               </li>
               <li class="item">
                 <a href="#">
                   <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
                   <span class="item-name">Непотопляемая селфи-палка</span>
                   <span class="item-price">2 500 руб.</span>
-                </a></li>
+                </a>
+                <div class="item-carts">
+                  <button href="#" class="button button-carts"><span>В корзину</span></button>
+                  <span>Добавить  к сравнению</span>
+                </div>
+              </li>
               <li class="item">
                 <a href="#">
                   <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
                   <span class="item-name">Селфи-палка «Следуй за мной»</span>
                   <span class="item-price">4 900 руб.</span>
                 </a>
+                <div class="item-carts">
+                  <button href="#" class="button button-carts"><span>В корзину</span></button>
+                  <span>Добавить  к сравнению</span>
+                </div>
               </li>
             </ul>
           </div>
