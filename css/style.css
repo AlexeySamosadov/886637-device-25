@@ -762,7 +762,7 @@ svg image:hover{
 
 
 
- */
+
 /* Логотипы */
 .logotypes {
   width: 1160px;
@@ -799,8 +799,7 @@ svg image:hover{
 .about-us,
 .contacts {
   position: relative;
-  width: 488px;
-  border: 1px solir red;
+  width: 495px;
   padding-top: 14px;
 }
 .about-us::before,
@@ -816,7 +815,14 @@ svg image:hover{
 }
 .about-us p {
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.about-us p:last-of-type {
+  margin-bottom: 75px;
+}
+.about-us-list {
+  margin-bottom: 55px;
 }
 .about-us-list li {
   position: relative;
@@ -824,6 +830,7 @@ svg image:hover{
   color: #000000;
   font-family: "Gilroy", sans-serif;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 .about-us-list li::before {
   position: absolute;
@@ -838,7 +845,12 @@ svg image:hover{
 .contacts {
   width: 561px;
 }
-
+.contacts p {
+  margin-bottom: 40px;
+}
+.contacts-map img {
+  margin-bottom: 61px;
+}
 
 /* Футер */
 .footer-main {
@@ -1406,6 +1418,7 @@ position: relative;
 }
 
 .write-us {
+  display: none;
   position: fixed;
   top: 20%;
   left: 50%;
@@ -1475,7 +1488,11 @@ position: relative;
   opacity: 0.5;
 }
 .big-map {
+  display: none;
   margin: 0  auto;
   width: 960px;
   height: 559px;
+}
+.contacts:focus  ~ .big-map  {
+  display: block;
 }
