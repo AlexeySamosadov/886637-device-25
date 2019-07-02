@@ -1120,7 +1120,7 @@ svg image:hover{
 
 /* Фильтр и сам каталог */
 .catalog  {
-  background-image: linear-gradient(to right, #dbdbdb 470px, #ebebeb 470px);
+  background-image: linear-gradient(to right, #dbdbdb 37%, #ebebeb 37%);
 }
 .catalog-div {
   display: flex;
