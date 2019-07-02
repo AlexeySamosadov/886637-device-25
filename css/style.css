@@ -119,8 +119,8 @@ svg image:hover{
   content: '';
 
   position: absolute;
-  top: 16px;
-  left: -1px;
+  top: 50%;
+  transform: translateY(-50%);
 
   height: 8px;
   width: 100%;
@@ -137,8 +137,8 @@ svg image:hover{
 }
 .button:hover::before,
 .button:focus::before {
-  height: 40px;
-  transform: translateY(-40%);
+  height: 100%;
+
 }
 .button:active span {
   opacity: 0.3;
@@ -148,14 +148,15 @@ svg image:hover{
 }
 .button-services {
   width: 160px;
-  transition: all 0.3s ease-out;
+  margin-bottom: 25px;
+  transition: all 0.3s;
 }
 .button-services:active {
   color: #f7e184;
 }
 .button-services:active::before {
   width: 278px;
-
+  left: 0px;
   color: #f7e184;
   background-color: #000000;
   z-index: -1;
@@ -167,8 +168,6 @@ svg image:hover{
 .button-carts {
   width: 200px;
 }
-
-
 /* Хеадер  */
 .header {
   display: flex;
@@ -427,14 +426,14 @@ svg image:hover{
 /* Основное содержимое */
    /*Спецпредложения*/
 .container {
-  width: 1440px;
+  width: 1160px;
+
   margin: 0 auto;
 }
 .offers {
   position: relative;
-  width: 1160px;
-  margin-left: 140px;
-  margin-bottom: 105px;
+
+  margin-bottom: 88px;
 
   background-image: linear-gradient(to bottom, #f7e296 115px, #ffffff 115px);
 }
@@ -452,8 +451,8 @@ svg image:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  right: 70px;
-  top: 340px;
+  right: 80px;
+  top: 331px;
   width: 80px;
   height: 15px;
 
@@ -486,6 +485,7 @@ svg image:hover{
 .offer::before {
   position: absolute;
   left: 600px;
+  top: 40px;
   width: 100px;
   height: 7px;
   content: "";
@@ -493,7 +493,7 @@ svg image:hover{
 }
 .offer::after {
   position: absolute;
-  top: -40px;
+  top: -10px;
   right: 0px;
   width: 166px;
   height: 131px;
@@ -531,6 +531,10 @@ svg image:hover{
 #slide-3:checked ~  .offers-list .slide-2 {
   display: none;
 }
+.slide-1 .img-slide-1,
+.slide-2 .img-slide-2{
+  height: 486px;
+}
 
 .offer div {
   display: flex;
@@ -538,6 +542,7 @@ svg image:hover{
   width: 500px;
   margin-top: 85px;
   margin-left: 125px;
+  padding-bottom: 25px;
 }
 .slide-3 div {
   margin-left: 45px;
@@ -545,11 +550,11 @@ svg image:hover{
 .slide-3 img {
   width: 525px;
   height: 334px;
-  margin-top: 40px;
+  margin-top: 70px;
 }
 .slogan {
   min-width: 400px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 
   white-space: pre-wrap;
   z-index: 10;
@@ -661,17 +666,25 @@ svg image:hover{
 
 /* Cервисы */
 .services {
-  width: 1440px;
   margin: 0 auto;
   display: flex;
-  height: 388px;
   margin-bottom: 94px;
 
   background-image: linear-gradient(to bottom, #ffffff 100px, #e5e5e5 100px);
 }
+.services-wrap {
+  display: flex;
+  padding-bottom: 111px;
+}
 .services input {
   display: none;
 }
+
+.services p {
+  white-space: pre-wrap;
+}
+
+
 .services h3,
 .about-us h2,
 .contacts h2 {
@@ -684,9 +697,8 @@ svg image:hover{
 }
 .services-left-column {
   position: relative;
-  width: 420px;
+  width: 285px;
   margin-top: 67px;
-  padding-left: 140px;
 }
 .services-left-column::before {
   position: absolute;
@@ -706,7 +718,7 @@ svg image:hover{
 .service::before {
   position: absolute;
   top: 30px;
-  right: -260px;
+  right: -255px;
   content: "";
 }
 .service-delivery::before {
@@ -719,11 +731,14 @@ svg image:hover{
   width: 171px;
   height: 194px;
   background-image: url("../img/svg/warranty.svg");
+  right: -277px;
+  top: 35px;
 }
 .service-credit::before {
   width: 156px;
   height: 186px;
   background-image: url("../img/svg/credit.svg");
+  top: 35px;
 }
 .service-warranty,
 .service-credit {
@@ -757,7 +772,8 @@ svg image:hover{
   background-color: #000000;
   z-index: -1;
   height: 40px;
-  transform: translateY(-40%);
+  transform: translateY(-50%);
+  left: 0px;
 }
 
 
@@ -1106,14 +1122,16 @@ svg image:hover{
 .catalog {
   display: flex;
   flex-wrap: wrap;
-
+}
+.catalog  {
+  background-image: linear-gradient(to right, #dbdbdb 470px, #ebebeb 470px);
 }
 .horizontal-filter {
   display: flex;
   width: 100%;
   height: 70px;
 
-  background-image: linear-gradient(to right, #dbdbdb 470px, #ebebeb 470px);
+
   align-items: center;
 }
 .horizontal-filter span {
@@ -1187,7 +1205,7 @@ svg image:hover{
 .vertical-filter {
 
   width: 470px;
-  padding-left: 87px;
+
   padding-top: 50px;
   display: flex;
   justify-content: center;

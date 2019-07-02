@@ -51,8 +51,8 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
-      <section class="offers">
+    <main>
+      <section class="offers container">
         <h2 class="visually-hidden">Спецпредложения</h2>
         <input type="radio" id="slide-1" name="slide" checked>
         <input type="radio" id="slide-2" name="slide">
@@ -64,7 +64,7 @@
             <label for="slide-3" aria-label="Переключись на квадрокоптеры"></label>
           </div>
           <li class="offer slide-1">
-            <img src="img/slider-1.png" alt="Самая длинная палка для селфи палка" width="384" height="486">
+            <img class="img-slide-1" src="img/slider-1.png" alt="Самая длинная палка для селфи палка" width="384" height="486">
             <div>
               <span class="slogan">Делай селфи,             как Бен Стиллер!</span>
               <p class="description">Самая длинная палка для селфи доступна в нашем магазине.
@@ -77,7 +77,7 @@
             </div>
           </li>
           <li class="offer slide-2">
-            <img src="img/slider-2.png" alt="Фитнес-браслеты" width="384" height="486">
+            <img class="img-slide-2" src="img/slider-2.png" alt="Фитнес-браслеты" width="384" height="486">
             <div>
               <span class="slogan">Худеем                правильно!</span>
               <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы
@@ -118,37 +118,36 @@
       </section>
 
       <section class="services">
-        <h2 class="visually-hidden">Сервисы</h2>
-        <input type="radio" id="delivery" name="service" checked>
-        <input type="radio" id="warranty" name="service">
-        <input type="radio" id="credit" name="service">
-        <div class="services-left-column">
-          <ul class="no-list">
-            <li><label class="button button-services" for="delivery">Доставка</label></li>
-            <li><label class="button button-services" for="warranty">Гарантия</label></li>
-            <li><label class="button button-services" for="credit">Кредит</label></li>
-          </ul>
-        </div>
-        <div class="service service-delivery">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </div>
-        <div class="service service-warranty">
-          <h3>Гарантия</h3>
-          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.</p>
-        </div>
-        <div class="service service-credit">
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-            условия кредита. Выгодные для нашего банка, разумеется.</p>
+        <div class="container  services-wrap">
+          <h2 class="visually-hidden">Сервисы</h2>
+          <input type="radio" id="delivery" name="service" checked>
+          <input type="radio" id="warranty" name="service">
+          <input type="radio" id="credit" name="service">
+          <div class="services-left-column">
+            <ul class="no-list">
+              <li><label class="button button-services" for="delivery">Доставка</label></li>
+              <li><label class="button button-services" for="warranty">Гарантия</label></li>
+              <li><label class="button button-services" for="credit">Кредит</label></li>
+            </ul>
+          </div>
+          <div class="service service-delivery">
+           <h3>Доставка</h3>
+           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div class="service service-warranty">
+            <h3>Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.            Товар, не дом, конечно же.</p>
+          </div>
+          <div class="service service-credit">
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
         </div>
       </section>
       <section class="logotypes">
         <h2 class="visually-hidden">Логотипы</h2>
         <ul class="logotypes-list no-list">
-          <!--
+
           <li><a href="#">
             <svg viewbox="0 0 300 300">
               <filter id="linear">
@@ -160,7 +159,7 @@
              0 1 0 1 0 "/>
               </filter>
               <image xlink:href="img/logo-1-1.png" x="0" y="0" height="260" width="100" />
-            </svg> -->
+            </svg>
           </a></li>
           <li><a href="#"><img src="img/logo-1-1.png" alt="DJI" width="260" height="100"></a></li>
           <li><a href="#"><img src="img/logo-2-1.png" alt="SP ADGETS" width="260" height="100"></a></li>
