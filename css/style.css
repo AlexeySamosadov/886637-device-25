@@ -1119,12 +1119,12 @@ svg image:hover{
 
 
 /* Фильтр и сам каталог */
-.catalog {
-  display: flex;
-  flex-wrap: wrap;
-}
 .catalog  {
   background-image: linear-gradient(to right, #dbdbdb 470px, #ebebeb 470px);
+}
+.catalog-div {
+  display: flex;
+  flex-wrap: wrap;
 }
 .horizontal-filter {
   display: flex;
@@ -1204,7 +1204,7 @@ svg image:hover{
 }
 .vertical-filter {
 
-  width: 470px;
+  width: 300px;
 
   padding-top: 50px;
   display: flex;
