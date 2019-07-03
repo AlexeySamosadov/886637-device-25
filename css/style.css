@@ -1120,17 +1120,20 @@ svg image:hover{
 
 /* Фильтр и сам каталог */
 .catalog  {
+  display: flex;
+  flex-direction: column;
+}
+.catalog-background1 {
   background-image: linear-gradient(to right, #dbdbdb 37%, #ebebeb 37%);
 }
-.catalog-div {
-  display: flex;
-  flex-wrap: wrap;
+.catalog-background2 {
+  background-image: linear-gradient(to right, #efefef 37%, #ffffff 37%);
+
 }
+
 .horizontal-filter {
   display: flex;
-  width: 100%;
   height: 70px;
-
 
   align-items: center;
 }
@@ -1202,6 +1205,11 @@ svg image:hover{
 .horizontal-filter .sort-active {
   opacity: 1;
 }
+
+.catalog-background2-div {
+  display: flex;
+}
+
 .vertical-filter {
 
   width: 300px;
@@ -1210,7 +1218,6 @@ svg image:hover{
   display: flex;
   justify-content: center;
 
-  background-color: #efefef;
 }
 .vertical-filter fieldset {
   display: flex;
