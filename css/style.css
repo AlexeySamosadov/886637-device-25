@@ -1286,7 +1286,7 @@ svg image:hover{
 .filter-price-div {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding-bottom: 59px;
   margin-left: -5px;
 
@@ -1306,15 +1306,23 @@ svg image:hover{
   width: 20px;
   height: 22px;
   background-image: url("../img/svg/filter-button.svg") ;
-  z-index: 1;
+  z-index: 2;
+
+}
+.filter-price-radio:first-of-type {
+  margin-right: 80px;
 }
 .filter-price-radio:active {
   width: 22px;
   height: 24px;
   background-image: url("../img/svg/filter-button-active.png");
-  margin-top: -2px;
-
-  margin-right: -2px;
+}
+.filter-price-radio:first-of-type:active {
+  margin-right: 78px;
+  margin-bottom: -2px;
+}
+.filter-price-radio:last-of-type:active {
+  margin-bottom: -2px;
 }
 .filter-price-radio::before {
   position: absolute;
@@ -1341,6 +1349,9 @@ svg image:hover{
 
 
 .filter-price-stick {
+  position: absolute;
+  top: 10px;
+  left: 20px;
   width: 93px;
   height: 2px;
   background-color: #91c92f;
