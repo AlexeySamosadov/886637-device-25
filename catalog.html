@@ -74,7 +74,7 @@
                <li><a href="#" class="sort-active">По цене</a></li>
                <li><a href="#">По типу</a></li>
                <li><a href="#">По популярности</a></li>
-               <li><a class="sort-start" href="#" aria-label="С начала"></a></li>
+               <li class="from-begin"><a class="sort-start" href="#" aria-label="С начала"></a></li>
                <li><a class="sort-end sort-active" href="#" aria-label="С конца"></a></li>
              </ul>
            </div>
@@ -86,6 +86,11 @@
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <fieldset class="filter-price">
                   <legend>Стоимость</legend>
+                  <div class="filter-price-div">
+                    <div class="filter-price-radio"></div>
+                    <div class="filter-price-stick"></div>
+                    <div class="filter-price-radio"></div>
+                  </div>
                   <input type="text">
                   <input type="text">
                 </fieldset>
@@ -94,15 +99,15 @@
                   <input type="checkbox" id="black" checked><label for="black">Черный</label>
                   <input type="checkbox" id="white"><label for="white" >Белый</label>
                   <input type="checkbox" id="blue" checked><label for="blue">Синий</label>
-                  <input type="checkbox" id="red"><label for="red">Красный</label>
-                  <input type="checkbox" id="pink" checked><label for="pink">Розовый</label>
+                  <input type="checkbox" id="red" checked><label for="red">Красный</label>
+                  <input type="checkbox" id="pink"><label for="pink">Розовый</label>
                 </fieldset>
                 <fieldset class="filter-bluetooth">
                   <legend>Bluetooth</legend>
                   <input type="radio" id="yes" name="bluetoth" value="yes" checked><label for="yes">Есть</label>
                   <input type="radio" id="no" name="bluetoth" value="no"><label for="no">Нет</label>
                 </fieldset>
-                <button class="button" type="submit">Показать</button>
+                <button class="button button-filter" type="submit">Показать</button>
               </form>
             </div>
             <div class="main-catalog" >
@@ -158,9 +163,9 @@
               <div class="back-forward">
                 <ul class="no-list">
                   <li class="back"><a href="#">НАЗАД</a></li>
-                  <li class="current-page"><a href="#"></a>1</li>
-                  <li class="page"><a href="#"></a>2</li>
-                  <li class="page"><a href="#"></a>3</li>
+                  <li class="current-page"><a href="#">1</a></li>
+                  <li class="page"><a href="#">2</a></li>
+                  <li class="page"><a href="#">3</a></li>
                   <li class="forward"><a href="#">ВПЕРЕД</a></li>
                 </ul>
               </div>

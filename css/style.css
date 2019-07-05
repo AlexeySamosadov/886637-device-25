@@ -105,6 +105,7 @@ svg image:hover{
   height: 40px;
   min-width: 180px;
 
+
   font: inherit;
   text-align: center;
   line-height: 70px;
@@ -170,6 +171,10 @@ svg image:hover{
 }
 .button-carts {
   width: 200px;
+}
+.button-filter {
+  width: 200px;
+  margin-left: 12px;
 }
 /* Хеадер  */
 .header {
@@ -618,7 +623,7 @@ svg image:hover{
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 2.15px;
+  letter-spacing: 3.5px;
 }
 
 /* Краткий каталог */
@@ -943,12 +948,14 @@ svg image:hover{
   position: relative;
   min-width: 50px;
   margin-right: 32px;
-
+}
+.footer-user-name {
+  margin-right: 19px;
 }
 .upper-menu-list .footer-user-exit {
   opacity: 0.3;
   padding:0;
-  margin-right: 40px;
+  margin-right: 33px;
 }
 .footer-user::before {
   position: absolute;
@@ -961,7 +968,7 @@ svg image:hover{
 }
 .footer-compare {
   position: relative;
-  margin-right: 27px;
+  margin-right: 33px;
 }
 .footer-compare::before {
   position: absolute;
@@ -978,7 +985,7 @@ svg image:hover{
 .footer-cart::before {
   position: absolute;
   content: "";
-  left: 6px;
+  left: 7px;
   top: 12px;
   width: 12px;
   height: 12px;
@@ -988,8 +995,9 @@ svg image:hover{
   opacity: 0.7;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 36px;
+
 }
 .upper-menu-list a:hover,
 .upper-menu-list a:focus {
@@ -1103,12 +1111,12 @@ svg image:hover{
 }
 
 /* Каталог */
-.container h1 {
+.main-breadcrumbs h1 {
   font-family: "Gilroy", sans-serif;
   font-size: 47px;
   font-weight: 400;
   line-height: 48px;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.6px;
   width: 1160px;
   margin: 0 auto;
   margin-top: 37px;
@@ -1131,7 +1139,7 @@ svg image:hover{
 }
 .breadcrumbs li {
   position: relative;
-  margin-right: 36px;
+  margin-right: 37px;
 }
 .breadcrumbs li::after {
   position: absolute;
@@ -1149,7 +1157,7 @@ svg image:hover{
 .breadcrumbs a {
   color: #000000;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.14px;
@@ -1190,22 +1198,22 @@ svg image:hover{
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.55px;
 }
 .horizontal-filter span:first-child {
   width: 200px;
-  margin-left: 1px;
-  margin-right: 150px;
+  margin-left: 10px;
+  margin-right: 157px;
 
   display: flex;
   justify-content: center;
 }
 .sort {
-  width: 250px;
+  width: 230px;
   display: flex;
   justify-content: center;
   padding-left: 10px;
-  margin-right: 5px;
+  margin-right: 0px;
 }
 .sort-start,
 .sort-end {
@@ -1225,8 +1233,7 @@ svg image:hover{
   display: flex;
   width: 600px;
   justify-content: flex-start;
-  padding: 20px;
-  paddin-top: 17px;
+  padding: 17px 0 20px 20px;
 }
 .horizontal-filter .horizontal-filter-sort {
 
@@ -1234,13 +1241,16 @@ svg image:hover{
 .horizontal-filter li {
   display: flex;
   align-items: center;
-  margin-right: 30px;
+  margin-right: 29px;
 }
 .horizontal-filter li:nth-child(4){
   margin-left: auto;
 }
 .horizontal-filter li:last-child {
   margin-right: 0;
+}
+.horizontal-filter .from-begin {
+  margin-right: 19px;
 }
 .horizontal-filter a {
   opacity: 0.3;
@@ -1269,10 +1279,64 @@ svg image:hover{
 
   width: 300px;
 
-  padding-top: 50px;
+  padding-top: 81px;
+  padding-left: 46px;
   display: flex;
-  justify-content: center;
+}
+.filter-price-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: 59px;
+  margin-left: -5px;
 
+}
+.filter-price-div::before {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  content: "";
+  width: 206px;
+  height: 2px;
+  background-color: #dbdbdb;
+
+}
+.filter-price-radio {
+  position: relative;
+  width: 20px;
+  height: 22px;
+  background-image: url("../img/svg/filter-button.svg") ;
+  z-index: 1;
+}
+.filter-price-radio::before {
+  position: absolute;
+  top: 21px;
+  left: 5px;
+  min-width: 30px;
+  height: 10px;
+  opacity: 0.2;
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.filter-price-radio:first-of-type::before {
+  content: "от 0";
+}
+.filter-price-radio:last-of-type::before {
+  content: "до 5000";
+  left: -18px;
+  min-width: 70px;
+}
+
+
+.filter-price-stick {
+  width: 93px;
+  height: 2px;
+  background-color: #91c92f;
+  z-index: 1;
 }
 .vertical-filter fieldset {
   display: flex;
@@ -1284,7 +1348,8 @@ svg image:hover{
 .vertical-filter fieldset:before {
   content: "";
   position: absolute;
-  top: -14px;
+  top: -12px;
+  left: 11px;
   width: 201px;
   height: 2px;
   background-color: #000000;
@@ -1299,15 +1364,30 @@ svg image:hover{
   letter-spacing: 0.18px;
                               /* Убрать обводку  */
 }
+.filter-price legend {
+  margin-bottom: 20px;
+}
+.filter-color {
+  padding-bottom: 43px;
+}
+.filter-bluetooth {
+  padding-bottom: 31px;
+}
+.filter-color legend {
+  margin-bottom: 13px;
+}
+.filter-bluetooth legend {
+  margin-bottom: 13px;
+}
 
 .vertical-filter label {
   color: #000000;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.14px;
-  padding-left: 30px;
+  padding-left: 39px;
 }
 .vertical-filter input {
   display: none;
@@ -1317,8 +1397,8 @@ svg image:hover{
 }
 .filter-color label::before {
   position: absolute;
-  left: 0px;
-  top: 7px;
+  left: -3px;
+  top: 8px;
   content: "";
   width: 27px;
   height: 23px;
@@ -1336,7 +1416,7 @@ svg image:hover{
 }
 .filter-bluetooth label::before {
   position: absolute;
-  left: 0px;
+  left: -1px;
   top: 7px;
   content: "";
   width: 25px;
@@ -1354,11 +1434,11 @@ svg image:hover{
 .main-catalog {
   display: flex;
   flex-direction: column;
-  width: 820px;
+  width: 830px;
   margin-left: 30px;
-  padding-left: 40px;
-  padding-right: 20px;
-  padding-top: 10px;
+  padding-left: 70px;
+
+  padding-top: 9px;
 }
 .goods ul {
   display: flex;
@@ -1366,7 +1446,8 @@ svg image:hover{
   justify-content: space-between;
 }
 .item {
-position: relative;
+  position: relative;
+  margin-bottom: 1px;
 }
 .item a {
   display: flex;
@@ -1381,7 +1462,7 @@ position: relative;
 }
 .item-name {
   max-width: 260px;
-  margin-top: 30px;
+  margin-top: 32px;
   margin-right: 20px;
 
   color: #000000;
@@ -1397,7 +1478,7 @@ position: relative;
 
 }
 .item-price {
-  margin-top: 30px;
+  margin-top: 33px;
   margin-left: auto;
 
   color: #464646;
@@ -1438,8 +1519,8 @@ position: relative;
 
 
 .back-forward {
-
-  margin-top: 20px;
+  margin-top: 19px;
+  margin-bottom: 77px;
   height: 70px;
   background-color: #ebebeb;
   display: flex;
@@ -1452,7 +1533,8 @@ position: relative;
   margin: 0;
   width: 760px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 
 }
 .back-forward li {
@@ -1462,24 +1544,33 @@ position: relative;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.71px;
   display: flex;
   align-items: center;
 }
 .back-forward a {
   display:  block;
-  padding: 23px 15px;
+  padding: 20px 13.5px;
+  padding-top: 25px;
+
 
 }
 .back-forward li:first-child {
-  margin-right: auto;
+  margin-right: 193px;
 }
 .back-forward li:last-child {
   margin-left: auto;
 }
-.back-forward li:first-child a,
-.back-forward li:last-child a {
+.back a,
+.forward a {
   padding: 0 30px;
+  padding-top: 24px;
+}
+.forward a {
+  padding-right: 25px;
+}
+.current-page a {
+
 }
 
 .back-forward li:first-child:hover,
