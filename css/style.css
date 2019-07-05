@@ -1308,6 +1308,14 @@ svg image:hover{
   background-image: url("../img/svg/filter-button.svg") ;
   z-index: 1;
 }
+.filter-price-radio:active {
+  width: 22px;
+  height: 24px;
+  background-image: url("../img/svg/filter-button-active.png");
+  margin-top: -2px;
+
+  margin-right: -2px;
+}
 .filter-price-radio::before {
   position: absolute;
   top: 21px;
@@ -1456,6 +1464,38 @@ svg image:hover{
 
   flex-wrap: wrap;
   margin-top: 45px;
+}
+.selfi-stick a {
+  position: relative;
+}
+.selfi-stick a::before {
+  position: absolute;
+  top: 28px;
+  right: 27px;
+  content: "New";
+  width: 60px;
+  height: 61px;
+  padding-top: 17px;
+  padding-left: 13px;
+
+
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,0.5);
+
+
+
+
+
+  color: #000000;
+  font-family: "Gilroy - Extra Bold" sans-serif ;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  opacity: 0.2;
+  letter-spacing: 0.25px;
+
+
 }
 .item img {
   width: 100%;
