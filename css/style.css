@@ -394,7 +394,7 @@ svg image:hover{
   background-color: #f7e296;
 
 }
-.catalog-menu-catalog:hover ~ .catalog-menu-2,
+
 .catalog-menu-catalog:focus ~ .catalog-menu-2,
 .catalog-menu-catalog:active ~ .catalog-menu-2 {
   display: flex;
@@ -1111,9 +1111,13 @@ svg image:hover{
   letter-spacing: 0.17px;
   width: 1160px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 37px;
+  margin-bottom: 20px;
   padding-left: 60px;
 
+}
+.main-breadcrumbs {
+  margin-bottom: 44px;
 }
 .breadcrumbs {
   width: 1160px;
@@ -1165,18 +1169,19 @@ svg image:hover{
   display: flex;
   flex-direction: column;
 }
+
 .catalog-background1 {
-  background-image: linear-gradient(to right, #dbdbdb 37%, #ebebeb 37%);
+  background-image: linear-gradient(to right, #dbdbdb 36.8%, #ebebeb 36.8%);
 }
 .catalog-background2 {
-  background-image: linear-gradient(to right, #efefef 37%, #ffffff 37%);
+  background-image: linear-gradient(to right, #efefef 36.8%, #ffffff 36.8%);
 
 }
 
 .horizontal-filter {
   display: flex;
   height: 70px;
-
+  background-image: linear-gradient(to right, #dbdbdb 328px, #ebebeb 328px);
   align-items: center;
 }
 .horizontal-filter span {
@@ -1188,8 +1193,10 @@ svg image:hover{
   letter-spacing: 0.91px;
 }
 .horizontal-filter span:first-child {
-  width: 470px;
-  padding-left: 120px;
+  width: 200px;
+  margin-left: 1px;
+  margin-right: 150px;
+
   display: flex;
   justify-content: center;
 }
@@ -1198,6 +1205,7 @@ svg image:hover{
   display: flex;
   justify-content: center;
   padding-left: 10px;
+  margin-right: 5px;
 }
 .sort-start,
 .sort-end {
@@ -1217,7 +1225,11 @@ svg image:hover{
   display: flex;
   width: 600px;
   justify-content: flex-start;
-  padding: 20px  ;
+  padding: 20px;
+  paddin-top: 17px;
+}
+.horizontal-filter .horizontal-filter-sort {
+
 }
 .horizontal-filter li {
   display: flex;
@@ -1250,6 +1262,7 @@ svg image:hover{
 
 .catalog-background2-div {
   display: flex;
+  background-image: linear-gradient(to right, #efefef 328px, #ffffff 328px);
 }
 
 .vertical-filter {
