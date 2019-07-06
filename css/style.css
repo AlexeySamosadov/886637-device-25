@@ -1746,6 +1746,7 @@ svg image:hover{
   box-shadow: none;
   opacity: 0.5;
 }
+
 .big-map {
   position: absolute;
   top: 0px;
@@ -1756,5 +1757,8 @@ svg image:hover{
   height: 559px;
 }
 .contacts:focus  ~ .big-map  {
+  display: block;
+}
+.display-block {
   display: block;
 }
