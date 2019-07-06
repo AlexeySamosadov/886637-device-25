@@ -301,10 +301,23 @@
   var form = popup.querySelector(".write-us form");
   var email = popup.querySelector(".write-us-email input");
   var textarea = popup.querySelector(".write-us-textarea textarea");
+  var miniMap = document.querySelector(".contacts-map img");
+  var bigMap = document.querySelector(".big-map");
+  var closeMap = bigMap.querySelector(".modal-close");
+
+  miniMap.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    bigMap.classList.add("display-block");
+    console.log("карта работает!");
+  });
+  closeMap.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    bigMap.classList.remove("display-block");
+  });
 
   link.addEventListener("click", function(evt) {
     evt.preventDefault();
-    popup.classList.add("display-block")
+    popup.classList.add("display-block");
     login.focus();
   });
 

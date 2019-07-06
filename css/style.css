@@ -1716,6 +1716,8 @@ svg image:hover{
 .modal {
   display:  block;
   position: relative;
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  background-color: #ffffff;
 }
 
 .write-us {
@@ -1728,9 +1730,6 @@ svg image:hover{
   margin-left: -430px;
   padding: 70px 100px;
   padding-top: 93px;
-  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
-  background-color: #ffffff;
-
 
   z-index:  100;
 }
@@ -1797,6 +1796,7 @@ svg image:hover{
   margin: 0  auto;
   width: 960px;
   height: 559px;
+
 }
 .contacts:focus  ~ .big-map  {
   display: block;
