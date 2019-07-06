@@ -1322,9 +1322,11 @@ svg image:hover{
 }
 .horizontal-filter li:nth-child(4){
   margin-left: auto;
+  margin-top: 3px;
 }
 .horizontal-filter li:last-child {
   margin-right: 0;
+  margin-top: 3px;
 }
 .horizontal-filter .from-begin {
   margin-right: 19px;
@@ -1387,7 +1389,7 @@ svg image:hover{
 
 }
 .filter-price-radio:first-of-type {
-  margin-right: 80px;
+  margin-right: 93px;
 }
 .filter-price-radio:active {
   width: 22px;
