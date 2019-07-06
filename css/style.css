@@ -708,7 +708,7 @@ svg image:hover{
 }
 .services-wrap {
   display: flex;
-  padding-bottom: 115px;
+  padding-bottom: 116px;
 }
 .services input {
   display: none;
@@ -727,7 +727,7 @@ svg image:hover{
   font-size: 47px;
   font-weight: 400;
   line-height: 48px;
-  letter-spacing: 0.21px;
+  letter-spacing: 0.7px;
 }
 .services-left-column {
   position: relative;
@@ -737,7 +737,7 @@ svg image:hover{
 .services-left-column::before {
   position: absolute;
   top: -65px;
-  right: 0px;
+  right: 1px;
   width: 7px;
   height: 319px;
   background-color: #000000;
@@ -818,46 +818,33 @@ svg image:hover{
   left: 0px;
 }
 
-
-
-
 /* Логотипы */
 .logotypes {
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 69px;
+  margin-bottom: 78px;
 }
 .logotypes-list {
   display: flex;
-  width: 500px;
-  height: 300px;
-
   justify-constent: space-between;
 }
-
+.logotypes li {
+  margin-right: 40px;
+}
+.logotypes li:last-child {
+  margin-left: -3px;
+}
 .logotypes a {
-  filter: grayscale(100%);
-  opacity: 0.2;
+  display: block;
+  width: 260px;
+  height: 100px;
 }
 .logotypes a:hover,
 .logotypes a:focus {
-  filter: grayscale(0%);
   opacity: 1;
 }
-
-.logotypes a {
-  width: 260px;
-  height: 100px;
-  border: 1px solid blue;
-}
-
-
-
 .logotypes .logo-1 {
   background-image: url("../img/logo-1.png");
-   border: 1px solid red;
-  width: 260px;
-  height: 100px;
 }
 .logo-1:hover {
   background-image: url("../img/logo-1-1.png");
@@ -875,8 +862,8 @@ svg image:hover{
   background-image: url("../img/logo-3-1.png");
 }
 .logo-4 {
-   background-image: url("../img/logo-4.png");
- }
+  background-image: url("../img/logo-4.png");
+}
 .logo-4:hover {
   background-image: url("../img/logo-4-1.png");
 }
@@ -894,6 +881,7 @@ svg image:hover{
 .container-bottom h2 {
   margin-top: 38px;
   margin-bottom: 43px;
+  margin-left: -1px;
 }
 .about-us,
 .contacts {
@@ -910,19 +898,24 @@ svg image:hover{
   height: 7px;
   background-color: #000000;
   content: "";
-
+}
+.contacts::before {
+  left: 1px;
 }
 .about-us p {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin-bottom: 30px;
   white-space: pre-wrap;
+  letter-spacing: 0.1px;
 }
 .about-us p:last-of-type {
   margin-bottom: 71px;
+  letter-spacing: -0.17px;
 }
 .about-us-list {
   margin-bottom: 59px;
+  margin-left: 1px;
 }
 .about-us-list li {
   position: relative;
@@ -931,11 +924,12 @@ svg image:hover{
   font-family: "Gilroy", sans-serif;
   font-weight: 400;
   margin-bottom: 10px;
+  letter-spacing: 0.6px;
 }
 .about-us-list li::before {
   position: absolute;
   top: 11px;
-  left: -33px;
+  left: -34px;
   width: 8px;
   height: 8px;
   content: "";
@@ -948,9 +942,11 @@ svg image:hover{
 .contacts p {
   margin-bottom: 39px;
   font-weight: 300;
+  letter-spacing: 0.1px;
 }
 .contacts-map img {
   margin-bottom: 60px;
+  margin-left: 1px;
 }
 
 /* Футер */
