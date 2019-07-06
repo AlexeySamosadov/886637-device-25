@@ -88,14 +88,15 @@ img {
   list-style: none;
   padding: 0;
 }
-/* Класс для SVG*/
+/* Класс для SVG
+
 svg image {
   filter: url(#linear);
 }
 svg image:hover{
   filter: none;
 }
-
+*/
 /* Кнопки */
 .button {
   display: flex;
@@ -444,7 +445,7 @@ svg image:hover{
 .offers {
   position: relative;
 
-  margin-bottom: 89px;
+  margin-bottom: 85px;
 
   background-image: linear-gradient(to bottom, #f7e296 113px, #ffffff 113px);
 }
@@ -587,11 +588,11 @@ svg image:hover{
   letter-spacing: 3.7px;    /* Не сходится с макетом */
 }
 .offer-table {
-  width: 460px;
+  width: 455px;
   margin-left: -4px;
 
 }
-.offer-table  td {
+.offer-table td {
   width: 130px;
   color: #000000;
   font-family: "Gilroy", sans-serif;
@@ -600,7 +601,12 @@ svg image:hover{
   line-height: 48px;
   letter-spacing: 0.36px;
 }
+.table-weight {
+  padding-left: 12px;
+
+}
 .offer-table th {
+  padding-top: 5px;
   width: 130px;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
@@ -646,6 +652,9 @@ svg image:hover{
 .landing-catalog p {
   white-space: pre-wrap;
   letter-spacing: 0.21px;
+}
+.landing-catalog-p {
+  padding-bottom: 5px;
 }
 .landing-catalog a {
   display: flex;
@@ -817,9 +826,15 @@ svg image:hover{
   width: 1160px;
   margin: 0 auto;
   margin-bottom: 69px;
-
-
 }
+.logotypes-list {
+  display: flex;
+  width: 500px;
+  height: 300px;
+
+  justify-constent: space-between;
+}
+
 .logotypes a {
   filter: grayscale(100%);
   opacity: 0.2;
@@ -829,18 +844,14 @@ svg image:hover{
   filter: grayscale(0%);
   opacity: 1;
 }
-.logotypes-list {
-  display: flex;
-  width: 500px;
-  height: 300px;
 
-  justify-constent: space-between;
-}
 .logotypes a {
   width: 260px;
   height: 100px;
   border: 1px solid blue;
 }
+
+
 
 .logotypes .logo-1 {
   background-image: url("../img/logo-1.png");
