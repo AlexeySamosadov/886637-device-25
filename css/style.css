@@ -445,7 +445,7 @@ svg image:hover{
 .offers {
   position: relative;
 
-  margin-bottom: 85px;
+  margin-bottom: 86px;
 
   background-image: linear-gradient(to bottom, #f7e296 113px, #ffffff 113px);
 }
@@ -603,16 +603,20 @@ svg image:hover{
 }
 .table-weight {
   padding-left: 12px;
-
 }
+
 .offer-table th {
-  padding-top: 5px;
+  padding-top: 4px;
+  padding-left: 3px;
   width: 130px;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 20px;
   letter-spacing: 0.13px;
+}
+.offer-table .table-weight-head {
+  padding-left: 12px;
 }
 .slogan {
   font-family: "Gilroy", sans-serif;
@@ -647,14 +651,38 @@ svg image:hover{
   display: flex;
   flex-direction: column;
   width: 160px;
-
+}
+.lcatalog-vr img {
+  margin-bottom: 1px;
+}
+.lcatalog-selfi img {
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+.lcatalog-action-camera img {
+  margin-top: 3px;
+  margin-left: 10px;
+}
+.lcatalog-fitness-brace img {
+  margin-top: 4px;
+  margin-left: 4px;
+}
+.lcatalog-smart-watch img {
+  margin-top: 2px;
+  margin-left: 6px;
+}
+.lcatalog-quadro-copter img {
+  margin-top: 6px;
+  margin-right: 2px;
 }
 .landing-catalog p {
   white-space: pre-wrap;
-  letter-spacing: 0.21px;
+  letter-spacing: 0.33px;
 }
-.landing-catalog-p {
+.landing-catalog .landing-catalog-p {
   padding-bottom: 5px;
+  white-space: nowrap;
+
 }
 .landing-catalog a {
   display: flex;
@@ -933,7 +961,7 @@ svg image:hover{
   width: 8px;
   height: 8px;
   content: "";
-  border: 1px solid #e5e5e5;;
+  border: 1.5px solid #e5e5e5;;
   border-radius: 50%;
 }
 .contacts {
@@ -983,10 +1011,10 @@ svg image:hover{
   min-width: 329px;
   justify-content: flex-start;
   align-items: flex-start;
-
+  margin-right: -2px;
 }
 .upper-menu-list li {
-  padding-left: 30px;
+  padding-left: 31px;
 }
 .footer-user {
   position: relative;
@@ -1004,7 +1032,7 @@ svg image:hover{
 .footer-user::before {
   position: absolute;
   content: "";
-  left: 4px;
+  left: 5px;
   top: 12px;
   width: 13px;
   height: 12px;
@@ -1017,7 +1045,7 @@ svg image:hover{
 .footer-compare::before {
   position: absolute;
   content: "";
-  left: 10px;
+  left: 11px;
   top: 14px;
   width: 10px;
   height: 10px;
@@ -1029,7 +1057,7 @@ svg image:hover{
 .footer-cart::before {
   position: absolute;
   content: "";
-  left: 7px;
+  left: 8px;
   top: 12px;
   width: 12px;
   height: 12px;
@@ -1052,10 +1080,13 @@ svg image:hover{
 }
 .lower-menu-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 430px;
-  margin-right: 30px;
+  margin-right: 35px;
   margin-top: 14px;
+}
+.lower-menu-list li {
+  margin-right: 33px;
 }
 .lower-menu-list a {
   color: #ffffff;
@@ -1083,6 +1114,8 @@ svg image:hover{
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 15px;
+  margin-right: -1px;
+  letter-spacing: 0;
 }
 .links {
   position: relative;
