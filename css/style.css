@@ -39,7 +39,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-
+  min-width: 1200px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -149,16 +149,28 @@ svg image:hover{
   width: 220px;
 }
 .button-offers span {
-  margin-left: 3px;
+  margin-left: 4px;
 }
 .button-services {
   width: 160px;
   margin-bottom: 24px;
   transition: all 0.3s;
 }
+.button-services-waranty {
+  margin-bottom: 25px;
+}
+.button-services span  {
+  margin-left: 5px;
+}
+.button-services-credit span {
+  margin-left: 3px;
+}
+.button-services,
+.button-services:focus,
 .button-services:active {
   color: #f7e184;
 }
+..button-services:focus::before
 .button-services:active::before {
   width: 278px;
   left: 0px;
@@ -170,12 +182,24 @@ svg image:hover{
 .button-contacts {
   width: 260px;
 }
+.button-about-us span {
+  margin-left: 5px;
+}
+.button-contacts span{
+  margin-left: 7px;
+}
+.button-contacts:before {
+  left: 1px;
+}
 .button-carts {
   width: 200px;
 }
 .button-filter {
   width: 200px;
   margin-left: 12px;
+}
+.button-filter span {
+  margin-left: 5px;
 }
 /* Хеадер  */
 .header {
@@ -233,7 +257,7 @@ svg image:hover{
   margin-left: 126px;
   border: 2px solid #000000;
 
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -346,7 +370,7 @@ svg image:hover{
 }
 .catalog-menu-catalog,
 .header-lower-menu a {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -389,7 +413,7 @@ svg image:hover{
 } */
 .catalog-menu-2 {
   position: absolute;
-  top: 50px;
+  top: 45px;
   left: -60px;
   justify-content: flex-start;
   width: 1160px;
@@ -510,7 +534,7 @@ svg image:hover{
   width: 166px;
   height: 131px;
   color: #ffffff;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial;
   font-size: 179px;
   font-weight: 400;
   line-height: 179.2px;
@@ -595,7 +619,7 @@ svg image:hover{
 .offer-table td {
   width: 130px;
   color: #000000;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 48px;
@@ -609,7 +633,7 @@ svg image:hover{
   padding-top: 4px;
   padding-left: 3px;
   width: 130px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
@@ -619,7 +643,7 @@ svg image:hover{
   padding-left: 12px;
 }
 .slogan {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   color: #000000;
   font-size: 47px;
   font-weight: 400;
@@ -627,7 +651,7 @@ svg image:hover{
   letter-spacing: 0.55px;
 }
 .button {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   color: #000000;
   font-size: 18px;
   font-weight: 400;
@@ -694,7 +718,7 @@ svg image:hover{
 
 
 
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -736,7 +760,7 @@ svg image:hover{
 }
 .services-wrap {
   display: flex;
-  padding-bottom: 116px;
+  padding-bottom: 115px;
 }
 .services input {
   display: none;
@@ -751,7 +775,7 @@ svg image:hover{
 .about-us h2,
 .contacts h2 {
   color: #000000;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 400;
   line-height: 48px;
@@ -864,6 +888,7 @@ svg image:hover{
 }
 .logotypes a {
   display: block;
+  position: relative;
   width: 260px;
   height: 100px;
 }
@@ -871,6 +896,30 @@ svg image:hover{
 .logotypes a:focus {
   opacity: 1;
 }
+.logotypes-list img {
+  position: absolute;
+  top: 0px
+}
+.pic-gray {
+  opacity: 1;
+}
+.pic-color {
+  opacity: 0;
+}
+.pic-gray:hover {
+  opacity: 0;
+}
+.pic-color:hover {
+  opacity: 1;
+}
+
+
+
+/*
+
+
+
+
 .logotypes .logo-1 {
   background-image: url("../img/logo-1.png");
 }
@@ -931,7 +980,7 @@ svg image:hover{
   left: 1px;
 }
 .about-us p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   margin-bottom: 30px;
   white-space: pre-wrap;
@@ -949,10 +998,10 @@ svg image:hover{
   position: relative;
   margin-left: 35px;
   color: #000000;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 400;
   margin-bottom: 10px;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.7px;
 }
 .about-us-list li::before {
   position: absolute;
@@ -1066,7 +1115,7 @@ svg image:hover{
 .upper-menu-list a {
   opacity: 0.7;
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   line-height: 36px;
 
@@ -1090,7 +1139,7 @@ svg image:hover{
 }
 .lower-menu-list a {
   color: #ffffff;
-  font-family: "Gilroy", sans-serif;;
+  font-family: "Gilroy", Arial, sans-serif;;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1111,7 +1160,7 @@ svg image:hover{
 }
 .tel {
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
   margin-right: -1px;
@@ -1175,13 +1224,13 @@ svg image:hover{
 /* Всплывающее окно "Напишите нам"*/
 .write-us label {
   color: #000000;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
 }
 .write-us input {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1189,7 +1238,7 @@ svg image:hover{
 
 /* Каталог */
 .main-breadcrumbs h1 {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 400;
   line-height: 48px;
@@ -1233,7 +1282,7 @@ svg image:hover{
 }
 .breadcrumbs a {
   color: #000000;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -1270,7 +1319,7 @@ svg image:hover{
   align-items: center;
 }
 .horizontal-filter span {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1334,7 +1383,7 @@ svg image:hover{
 .horizontal-filter a {
   opacity: 0.3;
   color: #000000;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   font-weight: 400;
@@ -1411,7 +1460,7 @@ svg image:hover{
   height: 10px;
   opacity: 0.2;
   color: #000000;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1455,7 +1504,7 @@ svg image:hover{
 
 .vertical-filter legend {
   color: #000000;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1480,7 +1529,7 @@ svg image:hover{
 
 .vertical-filter label {
   color: #000000;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 40px;
@@ -1568,24 +1617,17 @@ svg image:hover{
   padding-top: 17px;
   padding-left: 13px;
 
-
   border-radius: 50%;
   border: 2px solid rgba(0,0,0,0.5);
 
-
-
-
-
   color: #000000;
-  font-family: "Gilroy - Extra Bold" sans-serif ;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   opacity: 0.2;
   letter-spacing: 0.25px;
-
-
 }
 .item img {
   width: 100%;
@@ -1596,7 +1638,7 @@ svg image:hover{
   margin-right: 20px;
 
   color: #000000;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1612,7 +1654,7 @@ svg image:hover{
   margin-left: auto;
 
   color: #464646;
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -1669,7 +1711,7 @@ svg image:hover{
 }
 .back-forward li {
   color: #000000;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
