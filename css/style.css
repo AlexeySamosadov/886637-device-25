@@ -504,9 +504,9 @@ svg image:hover{
 
 }
 
-#slide-1:checked ~ .offers-list .offer-radio label[for="slide-1"],
-#slide-2:checked ~ .offers-list .offer-radio label[for="slide-2"],
-#slide-3:checked ~ .offers-list .offer-radio label[for="slide-3"] {
+#slide-1:checked ~ .offers-list .offer-radio-slide-1,
+#slide-2:checked ~ .offers-list .offer-radio-slide-2,
+#slide-3:checked ~ .offers-list .offer-radio-slide-3 {
   background-image: url("../img/svg/slider-button.svg")
 }
 
@@ -1661,7 +1661,7 @@ svg image:hover{
   letter-spacing: 0.16px;
 }
 
-
+.item a:hover ~ .item-carts,
 .item a:focus ~ .item-carts,
 .item a:active ~ .item-carts {
   display: flex;

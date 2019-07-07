@@ -21,9 +21,15 @@
     </form>
   </div>
   <ul class="header-upper-menu no-list">
-    <li class="user"><a class="login-link" href="#">Войти</a></li>
-    <li class="compare"><a href="#">Сравнить</a></li>
-    <li class="cart"><a href="#">Корзина</a></li>
+    <li class="user">
+      <a class="login-link" href="#">Войти</a>
+    </li>
+    <li class="compare">
+      <a href="#">Сравнить</a>
+    </li>
+    <li class="cart">
+      <a href="#">Корзина</a>
+    </li>
   </ul>
   <nav>
     <ul class="header-catalog-menu no-list">
@@ -32,15 +38,25 @@
         <ul class="catalog-menu-2 no-list">
           <li>
             <ul class="no-list">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="catalog.html">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
+              <li>
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="catalog.html">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="#">Экшн-камеры</a>
+              </li>
             </ul>
           </li>
           <li>
             <ul class="no-list">
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="#">Умные часы</a>
+              </li>
             </ul>
           </li>
           <li>
@@ -52,9 +68,15 @@
       </li>
     </ul>
     <ul class="header-lower-menu no-list">
-      <li class="header-delivery"><a href="#">Доставка</a></li>
-      <li class="header-varanty"><a href="#">Гарантия</a></li>
-      <li class="header-contacts"><a href="#">Контакты</a></li>
+      <li class="header-delivery">
+        <a href="#">Доставка</a>
+      </li>
+      <li class="header-varanty">
+        <a href="#">Гарантия</a>
+      </li>
+      <li class="header-contacts">
+        <a href="#">Контакты</a>
+      </li>
     </ul>
   </nav>
 </header>
@@ -66,10 +88,10 @@
     <input type="radio" id="slide-3" name="slide">
     <ul class="offers-list no-list">
       <li class="offer-radio">
-        <label for="slide-1" aria-label="Переключись на селфи"></label>
+        <label class="offer-radio-slide-1" for="slide-1" aria-label="Переключись на селфи"></label>
         <!-- почемуто односторонняя связь при изменении input label меняется, но наоборот при нажатии на label на input не действует -->
-        <label for="slide-2" aria-label="Переключись на фитнес-браслеты"></label>
-        <label for="slide-3" aria-label="Переключись на квадрокоптеры"></label>
+        <label class="offer-radio-slide-2" for="slide-2" aria-label="Переключись на фитнес-браслеты"></label>
+        <label class="offer-radio-slide-3" for="slide-3" aria-label="Переключись на квадрокоптеры"></label>
       </li>
       <li class="offer slide-1">
         <img class="img-slide-1" src="img/slider-1.png" alt="Самая длинная палка для селфи палка" width="384" height="486">
@@ -112,7 +134,9 @@
         <div>
           <span class="slogan">Порхает как бабочка, жалит как пчела!</span>
           <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <a class="button button-offers"><span>Подробнее</span></a>
+          <a class="button button-offers">
+            <span>Подробнее</span>
+          </a>
           <table class="offer-table">
             <tr>
               <td>800 м</td>
@@ -133,37 +157,49 @@
     <ul class="landing-catalog-list no-list">
       <li>
         <a href="#">
-          <span class="lcatalog-vr"><img src="img/svg/popular-1.svg" alt="Виртуальная реальность" width="97" height="55"></span>
+          <span class="lcatalog-vr">
+            <img src="img/svg/popular-1.svg" alt="Виртуальная реальность" width="97" height="55">
+          </span>
           <p>Виртуальная реальность</p>
         </a>
       </li>
       <li>
         <a href="catalog.html">
-          <span class="lcatalog-selfi"><img class="landing-catalog-selfi" src="img/svg/popular-2.svg" alt="Моноподы для селфи" width="86" height="117"></span>
+          <span class="lcatalog-selfi">
+            <img class="landing-catalog-selfi" src="img/svg/popular-2.svg" alt="Моноподы для селфи" width="86" height="117">
+          </span>
           <p>Моноподы для селфи</p>
         </a>
       </li>
       <li>
         <a href="#">
-          <span class="lcatalog-action-camera"><img src="img/svg/popular-3.svg" alt="Экшн-камеры" width="71" height="87"></span>
+          <span class="lcatalog-action-camera">
+            <img src="img/svg/popular-3.svg" alt="Экшн-камеры" width="71" height="87">
+          </span>
           <p class="landing-catalog-p">Экшн-камеры</p>
         </a>
       </li>
       <li>
         <a href="#">
-          <span class="lcatalog-fitness-brace"><img src="img/svg/popular-4.svg" alt="Фитнес-браслеты" width="107" height="65"></span>
+          <span class="lcatalog-fitness-brace">
+            <img src="img/svg/popular-4.svg" alt="Фитнес-браслеты" width="107" height="65">
+          </span>
           <p class="landing-catalog-p">Фитнес-браслеты</p>
         </a>
       </li>
       <li>
         <a href="#">
-          <span class="lcatalog-smart-watch"><img src="img/svg/popular-5.svg" alt="Умные часы" width="56" height="98"></span>
+          <span class="lcatalog-smart-watch">
+            <img src="img/svg/popular-5.svg" alt="Умные часы" width="56" height="98">
+          </span>
           <p class="landing-catalog-p">Умные часы</p>
         </a>
       </li>
       <li>
         <a href="#">
-          <span class="lcatalog-quadro-copter"><img src="img/svg/popular-6.svg" alt="Квадрокоптеры" width="132" height="69"></span>
+          <span class="lcatalog-quadro-copter">
+            <img src="img/svg/popular-6.svg" alt="Квадрокоптеры" width="132" height="69">
+          </span>
           <p class="landing-catalog-p">Квадрокоптеры</p>
         </a>
       </li>
@@ -179,13 +215,19 @@
       <div class="services-left-column">
         <ul class="no-list">
           <li>
-            <label class="button button-services" for="delivery"><span>Доставка</span></label>
+            <label class="button button-services" for="delivery">
+              <span>Доставка</span>
+            </label>
           </li>
           <li>
-            <label class="button button-services button-services-waranty" for="warranty"><span>Гарантия</span></label>
+            <label class="button button-services button-services-waranty" for="warranty">
+              <span>Гарантия</span>
+            </label>
           </li>
           <li>
-            <label class="button button-services button-services-credit" for="credit"><span>Кредит</span></label>
+            <label class="button button-services button-services-credit" for="credit">
+              <span>Кредит</span>
+            </label>
           </li>
         </ul>
       </div>
@@ -244,14 +286,20 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a href="#" class="button button-about-us"><span>Подробнее о нас</span></a>
+      <a href="#" class="button button-about-us">
+        <span>Подробнее о нас</span>
+      </a>
     </section>
 
     <section class="contacts">
       <h2>Контакты</h2>
       <p class="zero-letter-spacing">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <a class="contacts-map" href="#"><img src="img/map.jpg" alt="Карта" width="560" height="222"></a>
-      <a href="#" class="button button-contacts"><span>Напишите нам</span></a>
+      <a class="contacts-map" href="#">
+        <img src="img/map.jpg" alt="Карта" width="560" height="222">
+      </a>
+      <a href="#" class="button button-contacts">
+        <span>Напишите нам</span>
+      </a>
     </section>
     <section class="modal big-map">
       <h2 class="visually-hidden">Наш магазин расположен по адресу г.Москва ул. Строителей д.15</h2>
@@ -265,19 +313,33 @@
 <footer class="footer-main">
   <section class="footer-upper-menu">
     <h2 class="visually-hidden">Верхнее меню</h2>
-    <a href="#"><img class="footer-logo" src="img/footer-logo.png" alt="Device" width="163" height="35"></a>
+    <a href="#">
+      <img class="footer-logo" src="img/footer-logo.png" alt="Device" width="163" height="35">
+    </a>
     <ul class="upper-menu-list no-list">
-      <li class="footer-user"><a href="#">Войти</a></li>
-      <li class="footer-compare"><a href="#">Сравнить</a></li>
-      <li class="footer-cart"><a href="#">Корзина</a></li>
+      <li class="footer-user">
+        <a href="#">Войти</a>
+      </li>
+      <li class="footer-compare">
+        <a href="#">Сравнить</a>
+      </li>
+      <li class="footer-cart">
+        <a href="#">Корзина</a>
+      </li>
     </ul>
   </section>
   <nav class="footer-lower-menu">
     <address class="zero-letter-spacing">г. Москва, ул. Строителей, 15</address>
     <ul class="lower-menu-list no-list">
-      <li><a href="#" class="lower-menu-delivery">Доставка</a></li>
-      <li><a href="#" class="lower-menu-varanty">Гарантия</a></li>
-      <li><a href="#" class="lower-menu-contacts">Контакты</a></li>
+      <li>
+        <a href="#" class="lower-menu-delivery">Доставка</a>
+      </li>
+      <li>
+        <a href="#" class="lower-menu-varanty">Гарантия</a>
+      </li>
+      <li>
+        <a href="#" class="lower-menu-contacts">Контакты</a>
+      </li>
     </ul>
     <a href="tel:7-495-495-95-95" class="tel">Тел.: +7 (495) 495-95-95</a>
   </nav>
@@ -294,7 +356,7 @@
         <a href="#" class="social-twitter" aria-label="Twitter"></a>
       </li>
     </ul>
-    <a href="https://htmlacademy.ru/" class="HTML-Academy" aria-label="HTML-Academy"></a>
+    <a href="https://htmlacademy.ru/intensive/htmlcss" class="HTML-Academy" aria-label="HTML-Academy" target="_blank"></a>
   </section>
 </footer>
 
