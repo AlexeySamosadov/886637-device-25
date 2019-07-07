@@ -745,9 +745,7 @@ svg image:hover{
 .landing-catalog a:active img {
   opacity: 0.3;
 }
-.landing-catalog img {
 
-}
 
 
 /* Cервисы */
@@ -878,7 +876,7 @@ svg image:hover{
 }
 .logotypes-list {
   display: flex;
-  justify-constent: space-between;
+  justify-content: space-between;
 }
 .logotypes li {
   margin-right: 40px;
@@ -1361,9 +1359,7 @@ svg image:hover{
   justify-content: flex-start;
   padding: 17px 0 20px 20px;
 }
-.horizontal-filter .horizontal-filter-sort {
 
-}
 .horizontal-filter li {
   display: flex;
   align-items: center;
@@ -1435,6 +1431,7 @@ svg image:hover{
   height: 22px;
   background-image: url("../img/svg/filter-button.svg") ;
   z-index: 2;
+  cursor: pointer;
 
 }
 .filter-price-radio:first-of-type {
@@ -1661,9 +1658,9 @@ svg image:hover{
   letter-spacing: 0.16px;
 }
 
-.item a:hover ~ .item-carts,
-.item a:focus ~ .item-carts,
-.item a:active ~ .item-carts {
+.item:hover .item-carts,
+.item:focus .item-carts,
+.item:active .item-carts {
   display: flex;
 }
 
@@ -1740,9 +1737,6 @@ svg image:hover{
 }
 .forward a {
   padding-right: 25px;
-}
-.current-page a {
-
 }
 
 .back-forward li:first-child:hover,
