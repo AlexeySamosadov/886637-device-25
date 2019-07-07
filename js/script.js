@@ -8,6 +8,21 @@ var textarea = popup.querySelector(".write-us-textarea textarea");
 var miniMap = document.querySelector(".contacts-map img");
 var bigMap = document.querySelector(".big-map");
 var closeMap = bigMap.querySelector(".modal-close");
+var catalogMenuCatalog = document.querySelector('.catalog-menu-catalog');
+var catalogMenu2 = document.querySelector('.catalog-menu-2');
+var search = document.querySelector(".search input");
+var searchButton = document.querySelector('.search-button');
+
+search.addEventListener("focus", function (evt) {
+  evt.preventDefault();
+  searchButton.classList.toggle("display-block");
+  console.log("ff")
+});
+
+catalogMenuCatalog.addEventListener(  "focus", function (evt) {
+  evt.preventDefault();
+  catalogMenu2.classList.toggle("display-flex");
+});
 
 link.addEventListener("click", function(evt) {
   evt.preventDefault();

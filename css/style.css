@@ -265,9 +265,12 @@ svg image:hover{
 
   background-color: #f7e296;
 }
+/*
 .search input:focus ~ .search-button {
   display: block;
 }
+*/
+ */
 .search-button:hover {
   display: block;
   color: #ffffff;
@@ -424,12 +427,16 @@ svg image:hover{
   background-color: #f7e296;
 
 }
-
+/*
 .catalog-menu-catalog:focus ~ .catalog-menu-2,
 .catalog-menu-catalog:active ~ .catalog-menu-2 {
   display: flex;
 }
+*/
 
+.display-flex {
+  display: flex;
+}
 
 .catalog-menu-2 ul:first-child {
   flex-basis: 200px;
@@ -900,9 +907,11 @@ svg image:hover{
 }
 .pic-gray {
   opacity: 1;
+  transition: all 300ms;
 }
 .pic-color {
   opacity: 0;
+  transition: all 300ms;
 }
 .pic-gray:hover {
   opacity: 0;
