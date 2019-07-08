@@ -270,17 +270,16 @@ svg image:hover{
   display: block;
 }
 */
- */
-.search-button:hover {
-  display: block;
-  color: #ffffff;
-  background-color: #000000;
-}
+
+
+.search-button:hover,
 .search-button:focus {
   display: block;
   color: #ffffff;
   background-color: #000000;
-  background-color: #000000;
+}
+.search-button:active span{
+  color: ffffff;
   opacity: 0.3;
 }
 .search-button::before {
@@ -744,12 +743,13 @@ svg image:hover{
 .landing-catalog-selfi {
   align-self: flex-end;
 }
-.landing-catalog a:hover ,
-.landing-catalog a:focus {
+.landing-catalog-a:hover ,
+.landing-catalog-a:focus {
   background-image: linear-gradient(to bottom, #f0c52e 160px, #ffffff 160px);
   opacity: 1;
 }
-.landing-catalog a:active img {
+.landing-catalog-a:active img,
+.landing-catalog-a:active p {
   opacity: 0.3;
 }
 
@@ -1228,20 +1228,6 @@ svg image:hover{
   background-image: url("../img/svg/logo-html.svg");
   background-position: center;
 }
-/* Всплывающее окно "Напишите нам"*/
-.write-us label {
-  color: #000000;
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-}
-.write-us input {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-}
 
 /* Каталог */
 .main-breadcrumbs h1 {
@@ -1296,7 +1282,14 @@ svg image:hover{
   letter-spacing: 0.14px;
   opacity: 0.3;
 }
-/* Каталог*/
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  opacity: 0.6;
+}
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+  /* Каталог*/
 .catalog {
 
   display: flex;
@@ -1394,9 +1387,11 @@ svg image:hover{
   font-weight: 400;
   line-height: 18px;
 }
-.horizontal-filter a:focus,
-.horizontal-filter a:active,
-.horizontal-filter a:hover {
+.horizontal-filter a:hover,
+.horizontal-filter a:focus {
+  opacity: 0.6;
+}
+.horizontal-filter a:active {
   opacity: 1;
 }
 .horizontal-filter .sort-active {
@@ -1452,7 +1447,7 @@ svg image:hover{
   background-image: url("../img/svg/filter-button-active.png");
 }
 .filter-price-radio:first-of-type:active {
-  margin-right: 78px;
+  margin-right: 91px;
   margin-bottom: -2px;
 }
 .filter-price-radio:last-of-type:active {
@@ -1764,6 +1759,8 @@ svg image:hover{
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
   background-color: #ffffff;
 }
+/* Всплывающее окно "Напишите нам"*/
+
 
 .write-us {
   display: none;
@@ -1783,8 +1780,39 @@ svg image:hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
+.write-us label {
+  color: #000000;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.write-us input {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+
+  background-color: rgba(242,242,242, 0.5);
+  color: rgba(70,70,70, 0.4);
+}
+.write-us input:hover {
+  color: rgba(70,70,70, 0.4);
+  background-color: rgba(242,242,242, 0.8);
+}
+.write-us input:focus {
+  color: #464646;
+  background-color: #ffffff;
+  outline: 3px solid #f0c52e;
+}
+.write-us input:invalid {
+  color: rgba(70,70,70, 0.4);
+  background-color: rgba(237,181,181, 0.5);
+  outline: 0;
+}
+
+
 .write-us-name,
 .write-us-email {
   display: flex;
@@ -1799,7 +1827,6 @@ svg image:hover{
   padding-left: 20px;
   margin-top: 7px;
 
-  background-color: #f2f2f2;
   border: none;
 }
 .write-us-textarea {
@@ -1809,7 +1836,6 @@ svg image:hover{
   margin-bottom: 42px;
 }
 .write-us-textarea textarea {
-  background-color: #f2f2f2;
   width: 760px;
   height: 156px;
   padding-left: 20px;
@@ -1817,8 +1843,20 @@ svg image:hover{
   padding-top: 15px;
 
   border: none;
+  background-color: rgba(242,242,242, 0.5);
+  color: rgba(70,70,70, 0.4);
+}
+.write-us-textarea textarea:hover {
+  color: rgba(70,70,70, 0.4);
+  background-color: rgba(242,242,242, 0.8);
+}
+.write-us-textarea textarea:focus {
+  color: #464646;
+  background-color: #ffffff;
+  outline: 3px solid #f0c52e;
 
 }
+
 .modal-close {
   position: absolute;
   top: 22px;
@@ -1831,6 +1869,16 @@ svg image:hover{
   border-radius: 50%;
   box-shadow: none;
   opacity: 0.5;
+
+  tabindex="-1"
+}
+.modal-close:focus,
+.modal-close:hover {
+  opacity: 1;
+
+}
+.modal-close:active {
+  opacity: 0.3;
 }
 
 .big-map {

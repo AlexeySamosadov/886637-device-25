@@ -5,7 +5,7 @@ var login = popup.querySelector(".write-us-name input");
 var form = popup.querySelector(".write-us form");
 var email = popup.querySelector(".write-us-email input");
 var textarea = popup.querySelector(".write-us-textarea textarea");
-var miniMap = document.querySelector(".contacts-map img");
+var miniMap = document.querySelector(".contacts-map");
 var bigMap = document.querySelector(".big-map");
 var closeMap = bigMap.querySelector(".modal-close");
 var catalogMenuCatalog = document.querySelector('.catalog-menu-catalog');
@@ -45,7 +45,7 @@ form.addEventListener("submit", function(evt) {
   }
 });
 
-miniMap.addEventListener("click", function (evt) {
+miniMap.addEventListener("focus", function (evt) {
   evt.preventDefault();
   bigMap.classList.add("display-block");
   console.log("карта работает!");
