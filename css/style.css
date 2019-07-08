@@ -123,6 +123,7 @@ svg image:hover{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  left: 0;
 
   height: 8px;
   width: 100%;
@@ -304,7 +305,7 @@ svg image:hover{
 }
 .header-upper-menu {
   display: flex;
-  justify-content: flex-end;
+  /*justify-content: flex-end;*/
   margin-top: 18px;
   margin-right: 60px;
   width: 504px;
@@ -452,6 +453,7 @@ svg image:hover{
   justify-content: space-between;
   margin-right: 56px;
   width: 504px;
+  flex-wrap: wrap;
 }
 .header-varanty {
   margin-left: 34px;
@@ -1050,7 +1052,7 @@ svg image:hover{
   margin: 0 auto;
 }
 .footer-upper-menu {
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   margin-bottom: 10px;
 }
 .footer-lower-menu {
@@ -1063,6 +1065,7 @@ svg image:hover{
 .upper-menu-list {
   padding: 0;
   margin: 0;
+  margin-left: auto;
   display: flex;
   min-width: 329px;
   justify-content: flex-start;
