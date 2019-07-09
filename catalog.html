@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Каталог товаров</title>
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/style-mini.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -21,8 +21,9 @@
     </form>
   </div>
   <ul class="header-upper-menu no-list">
-    <li class="user">
-      <a class="login-link" href="#">Войти</a>
+    <li class="user user-name">
+      <a href="#">Валентин Петухов</a>
+      <a class="user-exit" href="#">Выйти</a>
     </li>
     <li class="compare">
       <a href="#">Сравнить</a>
@@ -129,9 +130,11 @@
           <fieldset class="filter-price">
             <legend>Стоимость</legend>
             <div class="filter-price-div">
-              <div class="filter-price-radio"><h3 class="visually-hidden">Цена от</h3></div>
+              <div class="filter-price-radio">
+                <h3 class="visually-hidden">Цена от</h3></div>
               <div class="filter-price-stick"></div>
-              <div class="filter-price-radio"><h3 class="visually-hidden">Цена до</h3> </div>
+              <div class="filter-price-radio">
+                <h3 class="visually-hidden">Цена до</h3> </div>
             </div>
           </fieldset>
           <fieldset class="filter-color">
