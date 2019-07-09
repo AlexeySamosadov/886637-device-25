@@ -17,7 +17,7 @@
     <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
       <label class="search-icon" for="search"></label>
       <input type="search" name="Поиск по сайту" placeholder=" Поиск по сайту" id="search">
-      <button class="search-button" type="submit">Найти</button>
+      <button class="search-button" type="submit"><span>Найти</span></button>
     </form>
   </div>
   <ul class="header-upper-menu no-list">
@@ -139,22 +139,22 @@
           </fieldset>
           <fieldset class="filter-color">
             <legend>Цвет</legend>
-            <input type="checkbox" id="black" name="black" checked  disabled>
+            <input class="visually-hidden" type="checkbox" id="black" name="black" checked>
             <label for="black">Черный</label>
-            <input type="checkbox" id="white" name="white">
+            <input class="visually-hidden" type="checkbox" id="white" name="white">
             <label for="white">Белый</label>
-            <input type="checkbox" id="blue" name="blue" checked>
+            <input class="visually-hidden" type="checkbox" id="blue" name="blue" checked>
             <label for="blue">Синий</label>
-            <input type="checkbox" id="red" name="red" checked>
+            <input class="visually-hidden" type="checkbox" id="red" name="red" checked>
             <label for="red">Красный</label>
-            <input type="checkbox" id="pink" name="pink">
+            <input class="visually-hidden" type="checkbox" id="pink" name="pink">
             <label for="pink">Розовый</label>
           </fieldset>
           <fieldset class="filter-bluetooth">
             <legend>Bluetooth</legend>
-            <input type="radio" id="yes" name="bluetoth" value="yes" checked>
+            <input class="visually-hidden" type="radio" id="yes" name="bluetoth" value="yes" checked>
             <label for="yes">Есть</label>
-            <input type="radio" id="no" name="bluetoth" value="no">
+            <input class="visually-hidden" type="radio" id="no" name="bluetoth" value="no">
             <label for="no">Нет</label>
           </fieldset>
           <button class="button button-filter" type="submit">Показать</button>

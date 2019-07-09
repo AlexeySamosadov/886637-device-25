@@ -8,6 +8,16 @@ var catalogMenu2 = document.querySelector(".catalog-menu-2");
 var search = document.querySelector(".search input");
 var searchButton = document.querySelector(".search-button");
 
+/*
+var item = document.querySelector(".item");
+var itemCards = document.querySelector(".item-carts");
+
+  item.addEventListener("focus", function (evt) {
+    console.log("Работает скрипт");
+    itemCards.classList.add("display-block");
+
+  });
+ */
 if (popup) {
   var login = popup.querySelector(".write-us-name input");
   var form = popup.querySelector(".write-us form");

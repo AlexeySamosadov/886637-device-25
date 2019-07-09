@@ -1710,12 +1710,28 @@ img {
   background-image: url("../img/svg/checkbox-on.svg");
   background-position: 2px 0;
 }
-
-/* нет стилей для заблокированных чекбоксов и радиокнопок */
-#black:disabled ~ label[for="black"]::before {
-  color: #red;
+#black:focus ~ label[for="black"]::before,
+#white:focus ~ label[for="white"]::before,
+#blue:focus ~ label[for="blue"]::before,
+#red:focus ~ label[for="red"]::before,
+#pink:focus ~ label[for="pink"]::before {
+  outline: 1px solid blue;
+}
+#black:disabled ~ label[for="black"],
+#white:disabled ~ label[for="white"],
+#blue:disabled ~ label[for="blue"],
+#red:disabled ~ label[for="red"],
+#pink:disabled ~ label[for="pink"] {
+  color: #a6a6a6;
 }
 
+#black:disabled ~ label[for="black"]::before,
+#white:disabled ~ label[for="white"]::before,
+#blue:disabled ~ label[for="blue"]::before,
+#red:disabled ~ label[for="red"]::before,
+#pink:disabled ~ label[for="pink"]::before {
+  opacity: 0.25;
+}
 
 
 .filter-bluetooth label::before {
@@ -1730,10 +1746,42 @@ img {
   background-repeat: no-repeat;
 }
 
-#yes:checked~label[for="yes"]::before,
-#no:checked~label[for="no"]::before {
+#yes:checked ~ label[for="yes"]::before,
+#no:checked ~ label[for="no"]::before {
   background-image: url("../img/svg/radio-on.svg");
 }
+#yes:checked:hover ~ label[for="yes"]::before,
+#no:checked:hover ~ label[for="no"]::before {
+  opacity: 0.6;
+}
+#yes:checked:active ~ label[for="yes"]::before,
+#no:checked:active ~ label[for="no"]::before {
+  background-image: url("../img/svg/radio-off.svg");
+}
+#yes:hover ~ label[for="yes"]::before,
+#no:hover ~ label[for="no"]::before {
+  opacity: 0.6;
+}
+#yes:active ~ label[for="yes"]::before,
+#no:active ~ label[for="no"]::before {
+  background-image: url("../img/svg/radio-on.svg");
+}
+
+
+#yes:focus ~ label[for="yes"]::before,
+#no:focus ~ label[for="no"]::before {
+  outline: 1px solid blue;
+}
+
+#yes:disabled ~ label[for="yes"],
+#no:disabled ~ label[for="no"] {
+  color: #a6a6a6;
+}
+#yes:disabled ~ label[for="yes"]:before,
+#no:disabled ~ label[for="no"] {
+  opacity: 0.25;
+}
+
 
 .main-catalog {
   display: flex;
@@ -1816,9 +1864,14 @@ img {
   letter-spacing: 0.16px;
 }
 
+
+
+
 .item:hover .item-carts,
-.item:focus .item-carts,
 .item:active .item-carts {
+  display: flex;
+}
+.item:focus-within .item-carts {
   display: flex;
 }
 
