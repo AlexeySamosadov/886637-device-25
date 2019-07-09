@@ -182,12 +182,12 @@ img {
   color: #f7e184;
 }
 
-..button-services:focus::before .button-services:active::before {
+.button-services:focus::before,
+.button-services:active::before {
   width: 278px;
   left: 0px;
   color: #f7e184;
   background-color: #000000;
-  z-index: -1;
 }
 
 .button-about-us,
@@ -303,7 +303,7 @@ img {
 }
 
 .search-button:active span {
-  color: ffffff;
+  color: #ffffff;
   opacity: 0.3;
 }
 
@@ -876,6 +876,7 @@ img {
   background-image: linear-gradient(to bottom, #ffffff 100px, #e5e5e5 100px);
 }
 
+
 .services-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -883,9 +884,7 @@ img {
   padding-bottom: 115px;
 }
 
-.services input {
-  display: none;
-}
+
 
 .services p {
   white-space: pre-wrap;
@@ -990,6 +989,12 @@ img {
 #warranty:checked~.services-left-column label[for="warranty"],
 #credit:checked~.services-left-column label[for="credit"] {
   color: #f7e184;
+}
+
+#delivery:focus~.services-left-column label[for="delivery"]:before,
+#warranty:focus~.services-left-column label[for="warranty"]:before,
+#credit:focus~.services-left-column label[for="credit"]:before {
+  outline: 1px solid blue;
 }
 
 #delivery:checked~.services-left-column label[for="delivery"]::before,
