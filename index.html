@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/style-mini.css" rel="stylesheet" type="text/css">
+  <link href="css/style-no-comment.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 <header class="header">
   <a class="header-logo" href="#">
-    <img src="img/logo.png" alt="Device" height="35" width="163">
+    <img src="img/svg/logo-device.svg" alt="Device" height="35" width="163">
   </a>
   <div class="search">
     <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -83,9 +83,9 @@
 <main>
   <section class="offers container">
     <h2 class="visually-hidden">Спецпредложения</h2>
-    <input type="radio" id="slide-1" name="slide" checked>
-    <input type="radio" id="slide-2" name="slide">
-    <input type="radio" id="slide-3" name="slide">
+    <input class="visually-hidden offers-input-1"  type="radio" id="slide-1" name="slide" checked>
+    <input class="visually-hidden offers-input-2"  type="radio" id="slide-2" name="slide">
+    <input class="visually-hidden offers-input-3"  type="radio" id="slide-3" name="slide">
     <ul class="offers-list no-list">
       <li class="offer-radio">
         <label class="offer-radio-slide-1" for="slide-1" aria-label="Переключись на селфи"></label>
@@ -97,7 +97,7 @@
         <div>
           <span class="slogan">Делай селфи,             как Бен Стиллер!</span>
           <p class="description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-          <a class="button button-offers"><span>Подробнее</span></a>
+          <a class="button button-offers"> Подробнее </a>
           <table class="offer-table">
             <tr>
               <td>8,5 м</td>
@@ -117,7 +117,7 @@
         <div>
           <span class="slogan">Худеем                правильно!</span>
           <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-          <a class="button button-offers"><span>Подробнее</span></a>
+          <a class="button button-offers">Подробнее</a>
           <table class="offer-table">
             <tr>
               <td>48 часов</td>
@@ -214,19 +214,13 @@
       <div class="services-left-column">
         <ul class="no-list">
           <li>
-              <label class="button button-services" for="delivery">
-                <span>Доставка</span>
-              </label>
+              <label class="button button-services" for="delivery">Доставка</label>
           </li>
           <li>
-              <label class="button button-services button-services-waranty" for="warranty">
-                <span>Гарантия</span>
-              </label>
+              <label class="button button-services button-services-waranty" for="warranty">Гарантия</label>
           </li>
           <li>
-              <label class="button button-services button-services-credit" for="credit">
-                <span>Кредит</span>
-              </label>
+              <label class="button button-services button-services-credit" for="credit">Кредит</label>
           </li>
         </ul>
       </div>
@@ -285,25 +279,21 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a href="#" class="button button-about-us">
-        <span>Подробнее о нас</span>
-      </a>
+      <a href="#" class="button button-about-us">Подробнее о нас</a>
     </section>
 
     <section class="contacts">
       <h2>Контакты</h2>
       <p class="zero-letter-spacing">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <a class="contacts-map" href="#" aria-label="Открыть большую карту. Наш адрес г.Москва ул. Строителей д.15">
+      <a class="contacts-map" href="https://goo.gl/maps/GEYDHNmmPpJyNFyv9" aria-label="Открыть большую карту. Наш адрес г.Москва ул. Строителей д.15">
         <img src="img/map.jpg" alt="Карта" width="560" height="222">
       </a>
-      <a href="#" class="button button-contacts">
-        <span>Напишите нам</span>
-      </a>
+      <a href="write-us.html" class="button button-contacts">Напишите нам</a>
     </section>
     <section class="modal big-map">
       <h2 class="visually-hidden">Наш магазин расположен по адресу г.Москва ул. Строителей д.15</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8996.928859124037!2d37.52492949702774!3d55.68495041852159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1560780520585!5m2!1sru!2sru" width="960" height="559" style="border:0" allowfullscreen></iframe>
-      <a class="modal-close" aria-label="Закрыть"></a>
+      <button class="modal-close" aria-label="Закрыть"></button>
     </section>
   </div>
 
@@ -313,7 +303,7 @@
   <section class="footer-upper-menu">
     <h2 class="visually-hidden">Верхнее меню</h2>
     <a href="#">
-      <img class="footer-logo" src="img/footer-logo.png" alt="Device" width="163" height="35">
+      <img class="footer-logo" src="img/svg/footer-logo-device.svg" alt="Device" width="163" height="35">
     </a>
     <ul class="upper-menu-list no-list">
       <li class="footer-user">
@@ -376,10 +366,10 @@
     </div>
 
     <button class="button" type="submit">Отправить</button>
-    <a class="modal-close close-write-us" aria-label="Закрыть"></a>
+    <button class="modal-close close-write-us" aria-label="Закрыть"></button>
   </form>
 </section>
-<script src="js/script-mini.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>

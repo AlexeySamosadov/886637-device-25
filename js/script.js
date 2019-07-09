@@ -3,10 +3,10 @@ var popup = document.querySelector(".write-us");
 var close = document.querySelector(".close-write-us");
 var miniMap = document.querySelector(".contacts-map");
 var bigMap = document.querySelector(".big-map");
-var catalogMenuCatalog = document.querySelector('.catalog-menu-catalog');
-var catalogMenu2 = document.querySelector('.catalog-menu-2');
+var catalogMenuCatalog = document.querySelector(".catalog-menu-catalog");
+var catalogMenu2 = document.querySelector(".catalog-menu-2");
 var search = document.querySelector(".search input");
-var searchButton = document.querySelector('.search-button');
+var searchButton = document.querySelector(".search-button");
 
 if (popup) {
   var login = popup.querySelector(".write-us-name input");
@@ -39,7 +39,7 @@ if (popup) {
 if (bigMap) {
   var closeMap = bigMap.querySelector(".modal-close");
 
-  miniMap.addEventListener("focus", function(evt) {
+  miniMap.addEventListener("click", function(evt) {
     evt.preventDefault();
     bigMap.classList.add("display-block");
     console.log("карта работает!");
