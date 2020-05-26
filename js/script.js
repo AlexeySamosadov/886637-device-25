@@ -34,7 +34,7 @@ if (popup) {
       console.log(textarea.value);
     }
   });
-};
+}
 
 if (bigMap) {
   var closeMap = bigMap.querySelector(".modal-close");
@@ -49,7 +49,7 @@ if (bigMap) {
     evt.preventDefault();
     bigMap.classList.remove("display-block");
   });
-};
+}
 
 search.addEventListener("focus", function(evt) {
   evt.preventDefault();
