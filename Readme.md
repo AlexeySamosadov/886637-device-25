@@ -1,6 +1,6 @@
 # Личный проект «Девайс»
 
-* Студент: [Алексей](https://up.htmlacademy.ru/htmlcss/25/user/886637).
+* Студент: [Алексей Артем] (https://up.htmlacademy.ru/htmlcss/25/user/886637).
 * Наставник: [Дмитрий Мирошниченко](https://up.htmlacademy.ru/htmlcss/25/user/591417).
 
 ---
